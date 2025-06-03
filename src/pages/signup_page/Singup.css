@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Build;
+    src: url(../../assets/Fonts/ESBuildTRIAL-Semibold-BF6618ac1dd0b22.otf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(../../assets/Fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    /* background-color: #090A0c; */
+    /* position: relative; */
+}
+
+.get-started-video{
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+.get-started-video video{
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.get-started{
+    /* background-color: rgba(255, 255, 0, 0.253); */
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    padding-top: 3%;
+    /* padding-left: 3%; */
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.get-started ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* flex-direction: column;/ */
+    gap: .7rem;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.get-started ul li{
+    list-style: none;
+    color: whitesmoke;
+}
+/* =============Box======== */
+.get-started-content{
+    height: 75%;
+    width: 28%;
+    /* border: 2px solid rgb(0, 0, 0); */
+    background-color: #090A0c;
+    background-image: url(../../assets/Images/card-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+.get-started-content .huly-img-box{
+    height: 9%;
+    width: 13%;
+    background-image: url(../../assets//Images/get-started-huly-logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* background-color: white; */
+}
+.get-started-content h1{
+    font-family: Build;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#email-label{
+    color: #9e9c9c;
+    font-family: Inter;
+    /* font-size: 1rem; */
+}
+
+.my-email{
+    height: 10%;
+    width: 95%;
+    background-color: #090A0c;
+    border: 1px solid #ffffff1c;
+}
+.my-create-account-button{
+    color: #090A0c;
+    padding: 1rem 3rem;
+    width: 95%;
+    border-radius: 2rem;
+    font-family: Inter;
+    font-weight: 700;
+}
+.or{
+    padding-left: 40%;
+    font-family: Inter;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+.get-started-buttons-two{
+    height: 20%;
+    width: 100%;
+    /* background-color: teal; */
+    display: flex;
+    gap: 2rem;
+    /* flex-direction: column; */
+}
+
+.get-started-buttons-two button{
+        /* padding: .5rem 1.5rem; */
+        color: #fff;
+        border: #090A0c;
+        /* background-color: red; */
+        background-color: #090a0c96;
+        border-radius: .6rem;
+        width: 45%;
+        height: 50%;
+        text-wrap: nowrap;
+        /* padding-bottom: .7rem; */
+}
+.get-started-buttons-two img{
+    height: 50%;
+}
+
+.get-started-account{
+    color: #ffffffab;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.get-started-account span {
+    color: #fff;
+}
+
+.term-use-policy{
+     color: #ffffff73;
+    font-family: Inter;
+    font-size: .8rem;
+    font-weight: 600;
+}

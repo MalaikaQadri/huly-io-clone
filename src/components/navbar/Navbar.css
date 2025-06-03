@@ -1,0 +1,253 @@
+@font-face {
+    font-family: Build;
+    src : url(../../assets/Fonts/ESBuildTRIAL-Semibold-BF6618ac1dd0b22.otf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(../../assets/Fonts/Inter-VariableFont_opsz\,wght.ttf);
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #090A0C;
+}
+
+
+
+/* ------------Nav Bar------------- */
+/* ===============Links ========= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+
+
+
+nav{
+    width: 100%;
+    height: 10%;
+    /* background-color: black; */
+    background-color: #090a0c00;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Inter;
+    align-items: center;
+    color: aliceblue;
+    font-size: .7rem;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+nav ul li  img{
+    height: 20px;
+}
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+    /* position: relative; */
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
+/* ==========Nav bar drop down======== */
+nav ul .dropdown1{
+    height: 170%;
+    /* width: 5px; */
+    position: absolute;
+    width: 200px;
+    background-color: #151516;
+    border-radius: .6rem;
+    border: 2px solid rgba(128, 128, 128, 0.664);
+    box-shadow: 0 20px 65px #090a0cc2;
+    margin-top: 10px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 1s;
+    transition: all ease 0.5s;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    /* padding: 0; */
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 2rem;
+}
+
+.dropdown1 ul li{
+    position: relative;
+}
+.dropdown1 p{
+    color: rgb(177, 158, 158);
+    /* margin-bottom: 10px; */
+    position: absolute;
+    top: 1.5rem;
+    font-weight: 300;
+
+}
+
+.dropdown1 h4{
+    color: rgb(177, 158, 158);
+    /* margin-bottom: 10px; */
+    position: absolute;
+    top: 4.4rem;
+    font-weight: 300;
+}
+
+nav ul li:hover .dropdown1,
+nav ul li .dropdown1:hover{
+    z-index: 99;
+    opacity: 1;
+
+}
+
+/* ----------Second Drop down------------- */
+nav ul .dropdown2{
+    height:310%;
+    /* width: 5px; */
+    position: absolute;
+    width: 200px;
+    background-color: #151516;
+
+    /* background-color: #222427a2; */
+    border-radius: .6rem;
+    border: 2px solid rgba(128, 128, 128, 0.664);
+    box-shadow: 0 20px 65px #090a0cc2;
+    margin-top: 10px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    /* padding: 0; */
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: .8rem;
+}
+
+.dropdown2 li{
+    font-size: .95rem;
+}
+.dropdown2 p{
+     color: rgb(177, 158, 158);
+    /* margin-bottom: 10px; */
+    position: absolute;
+    top: 1.9rem;
+    font-weight: 300;
+
+}
+
+.dropdown2 h4{
+     color: rgb(177, 158, 158);
+    /* margin-bottom: 10px; */
+    position: absolute;
+    top: 4.9rem;
+    font-weight: 300;
+}
+
+.dropdown2 .youtube{
+    color: rgb(177, 158, 158);
+    /* margin-bottom: 10px; */
+    position: absolute;
+    top: 1rem;
+    font-weight: 300;
+    text-wrap: nowrap;
+    left: 0;
+}
+.dropdown2 .slack{
+        color: rgb(177, 158, 158);
+    /* margin-bottom: 10px; */
+    position: absolute;
+    top: 100%;
+    font-weight: 300;
+    text-wrap: nowrap;
+    left: 0;
+    
+
+
+}
+.dropdown2 .github{
+        color: rgb(177, 158, 158);
+    /* margin-bottom: 10px; */
+    position: absolute;
+    top: 100%;
+    font-weight: 300;
+    text-wrap: nowrap;
+    left: 0;
+
+
+}
+
+
+nav ul li:hover .dropdown2,
+nav ul li .dropdown2:hover{
+    z-index: 999;
+    opacity: 1;
+
+}
+
+/* --------------------Nav Buttons-------------- */
+.nav-2 .bttnn1{
+    border: 2px solid rgba(255, 166, 0, 0);
+    padding: 6px 12px;
+    border-radius: 13px;
+}
+.nav-2 .bttnn2{
+    border: 1px solid rgb(238, 238, 238);
+    padding: 6px 12px;
+    border-radius: 13px;
+    background-color: #090A0C;
+}
+.nav-2 .bttnn3{
+    /* border: 2px solid orange; */
+    border: 1px solid rgb(238, 238, 238);
+    padding: 6px 12px;
+    border-radius: 13px;
+    background-color: #090A0C;
+
+}
+
+.nav-2 .bttnn2:hover{
+    background-color: #74767917;
+    
+}
+.nav-2 .bttnn3:hover{
+    background-color: #74767917;
+
+}

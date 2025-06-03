@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Build;
+    src: url(../../assets/Fonts/ESBuildTRIAL-Semibold-BF6618ac1dd0b22.otf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(../../assets/Fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #090a0c;
+}
+/* ------------Footer------------- */
+/* ============Last line============ */
+#footer-last-line{
+    height: 8%;
+    width: 100%;
+    background-color: #090a0c;
+    color: rgba(245, 245, 245, 0.705);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+    font-size: 1.2rem;
+    font-family: Inter;
+
+}
+#footer-last-line ul{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#footer-last-line ul li{
+    list-style: none;
+    /* gap: 50px; */
+}
+#footer-last-line ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+#footer-last-line img{
+    height: 2vh;
+    width: auto;
+}

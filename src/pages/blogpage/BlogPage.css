@@ -1,0 +1,1337 @@
+@font-face {
+    font-family: Build;
+    src : url(../../assets/Fonts/ESBuildTRIAL-Semibold-BF6618ac1dd0b22.otf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(../../assets/Fonts/Inter-VariableFont_opsz\,wght.ttf);
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #090A0C;
+}
+
+/* ======Main Content================= */
+
+/* -----Top box------------------- */
+.top-box{
+    height: 50%;
+    width: 50%;
+    color: white;
+    position: relative;
+    /* border: 2px solid grey; */
+    margin: 40px 60px;
+    padding: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* background-color: aqua; */
+    margin-left: 25%;
+    margin-right: 30%;
+    /* margin-top: 30%; */
+}
+/* ------Top box Image */
+.top-box img{
+    /* float: left; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    /* right: 70px; */
+    height: 26vh;
+    border-radius: 6px;
+    
+}
+.top-box h4{
+    margin-top: 7px;
+    font-family: Build;
+    font-size: 70%;
+}
+.top-box h2{
+    margin-top: 15px;
+    font-family: Build;
+    font-size: 1.5rem;
+
+}
+.top-box p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: grey;
+    width: 50%;
+    font-size: .9rem;
+    font-family: Inter;
+}
+.top-box span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.top-box a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+}
+
+/* -----------Media Queries for top box---------- */
+@media (max-width:600px) {
+    .top-box{
+        height: 50%;
+        width: 100%;
+        margin: 10px 10px;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        /* margin-left: 25%; */
+        /* margin-right: 30%; */
+    }
+    .top-box img{
+        position: absolute;
+        /* position: absolute; */
+    left: 8%;
+    top: 0;
+    /* top: 23%; */
+    /* right: 70px; */
+    height: 26vh;
+    border-radius: 6px;
+    }
+
+    .top-box h4{
+        margin-top: 35vh;
+        /* margin-top: 90vh; */
+        font-family: Build;
+        font-size: 70%;
+        padding-left: 10px;
+        width: 95%;
+        /* margin: 0; */
+    }
+    .top-box h2{
+        margin-top: 10px;
+        font-family: Build;
+        width: 90%;
+        font-size: 17px;
+        /* font-size: 1.5rem; */
+        /* border: 1px solid red; */
+        
+    }
+    .top-box p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: grey;
+        width: 90%;
+        font-size: .9rem;
+        font-family: Inter;
+
+}
+
+.top-box span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.top-box a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+    width: 90%;
+}
+}
+
+/* -----------==============----------------- */
+/* --------Line After Box---------- */
+
+
+.line{
+    /* margin-left: 25%; */
+    /* margin-right: 30%; */
+    /* margin-left: 27%; */
+    /* margin-right: 40%; */
+    height: 10%;
+    width: 45%; 
+    /* width: 40%;  */
+    background-color: rgb(125, 255, 49);
+}
+
+
+/* ---------Media Queries for line-- */
+@media (max-width:600px) {
+    .line{
+        margin-bottom: 5%;
+        margin-top: 13%;
+        /* margin-right: 10%; */
+        width: 80%;
+        height: .3%;
+        padding: 0;
+        margin-right: 10px;
+        margin-left: 40px;
+        /* border: 1px solid blue; */
+    }
+    
+}
+
+/* ------------Category Buttons-------------- */
+.buttons{
+    height: 8%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2%;
+    /* padding-top: 2%; */
+    margin-left: 25%;
+    margin-right: 30%;
+    /* background-color: aqua; */
+    padding: 30px 30px;
+
+}
+
+.buttons h4 {
+    /* color: rgb(28, 29, 29); */
+    color: rgb(163, 167, 167);
+    font-family: Inter;
+    font-size: .7rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(216, 113, 75, 0);
+    padding: 5px 10px;
+}
+
+.buttons .btn1 {
+    color: rgb(28, 29, 29);
+    /* color: rgb(163, 167, 167); */
+    font-family: Inter;
+    font-size: .7rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(216, 113, 75, 0.911);
+    padding: 5px 10px;
+}
+
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    display: none;
+}
+
+/* ---------------Media Queries for buttons----- */
+@media (max-width:600px) {
+    .buttons{
+        height: 8%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        /* padding-top: 2%; */
+        margin-left: 0;
+        margin-right: 10%;
+        /* background-color: aqua; */
+        padding: 30px 30px;
+    
+    }
+
+    .buttons h4 {
+        /* color: rgb(28, 29, 29); */
+        color: rgb(163, 167, 167);
+        font-family: Inter;
+        font-size: .7rem;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        background-color: rgba(216, 113, 75, 0);
+        padding: 5px 10px;
+    }
+    
+    .buttons .btn1 {
+        color: rgb(28, 29, 29);
+        /* color: rgb(163, 167, 167); */
+        font-family: Inter;
+        font-size: .7rem;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgba(216, 113, 75, 0.911);
+        padding: 5px 10px;
+    }
+
+
+
+}
+
+/* ====================================== */
+
+/* <!-- ---------Boxes after Categorey-----------  */
+
+/* -------------------Box 1--------------- */
+
+.box1{
+    height: 50%;
+    width: 50%;
+    color: white;
+    position: relative;
+    /* border: 2px solid grey; */
+    /* margin: 40px 60px; */
+    padding: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* background-color: aqua; */
+    margin-left: 25%;
+    margin-right: 30%;
+    /* margin-top: 30%; */
+}
+/* ------Top box Image */
+.box1 img{
+    /* float: left; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    /* right: 70px; */
+    height: 26vh;
+    width: auto;
+    border-radius: 6px;
+}
+.box1 h4{
+    margin-top: 7px;
+    font-family: Build;
+    font-size: 70%;
+}
+.box1 h2{
+    margin-top: 15px;
+    font-family: Build;
+    width: 70%;
+    font-size: 1.4rem;
+
+
+}
+.box1 p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: grey;
+    width: 47%;
+    font-size: .9rem;
+    font-family: Inter;
+}
+.box1 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box1 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+}
+
+/* ==========Box 1 Media Quries======= */
+@media (max-width:600px) {
+    .box1{
+        height: 50%;
+        width: 100%;
+        margin: 10px 10px;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        /* margin-left: 25%; */
+        /* margin-right: 30%; */
+    }
+    .box1 img{
+        position: absolute;
+        /* position: absolute; */
+    left: 8%;
+    top: 0;
+    /* top: 23%; */
+    /* right: 70px; */
+    height: 24vh;
+    border-radius: 6px;
+    }
+
+    .box1 h4{
+        /* margin-top: 35vh; */
+        margin-top: 40vh;
+        font-family: Build;
+        font-size: 70%;
+        padding-left: 10px;
+        width: 95%;
+        /* margin: 0; */
+    }
+    .box1 h2{
+        margin-top: 10px;
+        font-family: Build;
+        width: 90%;
+        font-size: 17px;
+        line-height: 1.5;
+        /* font-size: 1.5rem; */
+        /* border: 1px solid red; */
+        
+    }
+    .box1 p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: grey;
+        width: 90%;
+        font-size: .9rem;
+        font-family: Inter;
+        /* line-height: 1.3; */
+
+
+}
+
+.box1 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box1 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+    width: 90%;
+}
+}
+
+/* ------------=====================---------------- */
+
+/* ------------------Box 2--------------------- */
+
+.box2{
+    height: 50%;
+    width: 50%;
+    color: white;
+    position: relative;
+    /* border: 2px solid grey; */
+    /* margin: 40px 60px; */
+    padding: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* background-color: aqua; */
+    margin-left: 25%;
+    margin-right: 30%;
+    /* margin-top: 30%; */
+}
+/* ------Top box Image */
+.box2 img{
+    /* float: left; */
+    position: absolute;
+    left: 53%;
+    top: 51%;
+    /* right: 70px; */
+    height: 26vh;
+    border-radius: 6px;
+}
+.box2 h4{
+    margin-top: 7px;
+    font-family: Build;
+    font-size: 70%;
+}
+.box2 h2{
+    margin-top: 15px;
+    font-family: Build;
+    width: 65%;
+    font-size: 1.3rem;
+
+
+}
+.box2 p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: grey;
+    width: 47%;
+    font-size: .9rem;
+    font-family: Inter;
+}
+.box2 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box2 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+}
+
+/* -----Media Queries for box 2------------- */
+@media (max-width:600px) {
+    .box2{
+        height: 50%;
+        width: 100%;
+        margin: 100px 10px;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        /* margin-left: 25%; */
+        /* margin-right: 30%; */
+    }
+    .box2 img{
+        position: absolute;
+        /* position: absolute; */
+    left: 8%;
+    top: 0;
+    /* top: 23%; */
+    /* right: 70px; */
+    height: 25vh;
+    border-radius: 6px;
+    }
+
+    .box2 h4{
+        /* margin-top: 35vh; */
+        margin-top: 30vh;
+        font-family: Build;
+        font-size: 70%;
+        padding-left: 10px;
+        width: 95%;
+        /* margin: 0; */
+    }
+    .box2 h2{
+        margin-top: 10px;
+        font-family: Build;
+        width: 90%;
+        font-size: 17px;
+        /* font-size: 1.5rem; */
+        /* border: 1px solid red; */
+        
+    }
+    .box2 p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: grey;
+        width: 90%;
+        font-size: .9rem;
+        font-family: Inter;
+
+}
+
+.box2 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box2 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+    width: 90%;
+}
+}
+
+/* -------------==============---------------- */
+
+/* --------------Box 3------------ */
+
+.box3{
+    height: 50%;
+    width: 50%;
+    color: white;
+    position: relative;
+    /* border: 2px solid grey; */
+    /* margin: 40px 60px; */
+    padding: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* background-color: aqua; */
+    margin-left: 25%;
+    margin-right: 30%;
+    /* margin-top: 30%; */
+}
+/* ------Top box Image */
+.box3 img{
+    /* float: left; */
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    /* right: 70px; */
+    height: 26vh;
+    border-radius: 6px;
+    
+}
+.box3 h4{
+    margin-top: 4rem;
+    font-family: Build;
+    font-size: 70%;
+}
+.box3 h2{
+    margin-top: 1.7rem;
+    font-family: Build;
+    width: 65%;
+    font-size: 1.5rem;
+
+}
+.box3 p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: grey;
+    width: 47%;
+    font-size: .9rem;
+    font-family: Inter;
+}
+.box3 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box3 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+}
+
+/* -------------Media Queries for box 3--------- */
+@media (max-width:600px) {
+    .box3{
+        height: 50%;
+        width: 100%;
+        margin: 70px 10px;
+        /* margin-top: 0; */
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        /* padding-top: 0; */
+        /* margin-left: 25%; */
+        /* margin-right: 30%; */
+    }
+    .box3 img{
+        position: absolute;
+        /* position: absolute; */
+    left: 8%;
+    top: 0;
+    /* top: 23%; */
+    /* right: 70px; */
+    height: 25vh;
+    border-radius: 6px;
+    }
+
+    .box3 h4{
+        /* margin-top: 35vh; */
+        margin-top: 35vh;
+        font-family: Build;
+        font-size: 70%;
+        padding-left: 10px;
+        width: 95%;
+        /* line-height: 1.2; */
+        /* margin: 0; */
+    }
+    .box3 h2{
+        margin-top: 10px;
+        font-family: Build;
+        width: 90%;
+        font-size: 17px;
+        /* line-height: 1.5; */
+        /* font-size: 1.5rem; */
+        /* border: 1px solid red; */
+        
+    }
+    .box3 p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: grey;
+        width: 90%;
+        font-size: .9rem;
+        font-family: Inter;
+
+}
+
+.box3 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box3 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+    width: 90%;
+}
+}
+
+/*-------------------------- Box 4 ------------------------- */
+
+
+.box4{
+    height: 50%;
+    width: 50%;
+    color: white;
+    position: relative;
+    /* border: 2px solid grey; */
+    /* margin: 40px 60px; */
+    padding: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* background-color: aqua; */
+    margin-left: 25%;
+    margin-right: 30%;
+    /* margin-top: 30%; */
+}
+/* ------Top box Image */
+.box4 img{
+    /* float: left; */
+    position: absolute;
+    left: 53%;
+    top: 33%;
+    /* right: 70px; */
+    height: 26vh;
+    border-radius: 6px;
+    
+}
+.box4 h4{
+    margin-top: 7px;
+    font-family: Build;
+    font-size: 70%;
+}
+.box4 h2{
+    margin-top: 15px;
+    font-family: Build;
+    width: 65%;
+
+}
+.box4 p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: grey;
+    width: 47%;
+    font-size: .9rem;
+    font-family: Inter;
+}
+.box4 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box4 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+}
+
+/* -------------Media Queries for box 4------- */
+@media (max-width:600px) {
+    .box4{
+        height: 50%;
+        width: 100%;
+        margin: 70px 10px;
+        /* margin-top: 0; */
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        /* padding-top: 0; */
+        /* margin-left: 25%; */
+        /* margin-right: 30%; */
+    }
+    .box4 img{
+        position: absolute;
+        /* position: absolute; */
+    left: 8%;
+    top: 0;
+    /* top: 23%; */
+    /* right: 70px; */
+    height: 25vh;
+    border-radius: 6px;
+    }
+
+    .box4 h4{
+        /* margin-top: 35vh; */
+        margin-top: 35vh;
+        font-family: Build;
+        font-size: 70%;
+        padding-left: 10px;
+        width: 95%;
+        line-height: 1.5;
+        /* margin: 0; */
+    }
+    .box4 h2{
+        margin-top: 10px;
+        font-family: Build;
+        width: 90%;
+        font-size: 17px;
+        /* font-size: 1.5rem; */
+        /* border: 1px solid red; */
+        
+    }
+    .box4 p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: grey;
+        width: 90%;
+        font-size: .9rem;
+        font-family: Inter;
+
+}
+
+.box4 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box4 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+    width: 90%;
+}
+}
+
+/* -------------=====================------------- */
+
+/* ---------------------Box 5 ------------------- */
+
+
+.box5{
+    height: 50%;
+    width: 50%;
+    color: white;
+    position: relative;
+    /* border: 2px solid grey; */
+    /* margin: 40px 60px; */
+    padding: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    background-color: #090A0C;
+    margin-left: 25%;
+    margin-right: 30%;
+    /* margin-top: 30%; */
+}
+/* ------Top box Image */
+.box5 img{
+    /* float: left; */
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    /* right: 70px; */
+    height: 26vh;
+    border-radius: 6px;
+    
+}
+.box5 h4{
+    margin-top: 7px;
+    font-family: Build;
+    font-size: 70%;
+}
+.box5 h2{
+    margin-top: 15px;
+    font-family: Build;
+    width: 60%;
+    font-size: 1.4rem;
+
+}
+.box5 p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: grey;
+    width: 47%;
+    font-size: .9rem;
+    font-family: Inter;
+}
+.box5 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box5 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+}
+
+/* --------------Media Queries for box 5--------- */
+@media (max-width:600px) {
+    .box5{
+        height: 50%;
+        width: 100%;
+        margin: 70px 10px;
+        /* margin-top: 0; */
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        /* padding-top: 0; */
+        /* margin-left: 25%; */
+        /* margin-right: 30%; */
+    }
+    .box5 img{
+        position: absolute;
+        /* position: absolute; */
+    left: 8%;
+    top: 0;
+    /* top: 23%; */
+    /* right: 70px; */
+    height: 25vh;
+    border-radius: 6px;
+    }
+
+    .box5 h4{
+        /* margin-top: 35vh; */
+        margin-top: 30vh;
+        font-family: Build;
+        font-size: 70%;
+        padding-left: 10px;
+        width: 95%;
+        line-height: 1.5;
+        /* margin: 0; */
+    }
+    .box5 h2{
+        margin-top: 10px;
+        font-family: Build;
+        width: 90%;
+        font-size: 17px;
+        /* font-size: 1.5rem; */
+        /* border: 1px solid red; */
+        
+    }
+    .box5 p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: grey;
+        width: 90%;
+        font-size: .9rem;
+        font-family: Inter;
+
+}
+
+.box5 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box5 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+    width: 90%;
+}
+}
+
+/* ====================================== */
+/* ===============Box 6================ */
+
+.box6{
+    height: 50%;
+    width: 50%;
+    color: white;
+    position: relative;
+    /* border: 2px solid grey; */
+    /* margin: 40px 60px; */
+    padding: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* background-color: aqua; */
+    margin-left: 25%;
+    margin-right: 30%;
+    /* margin-top: 30%; */
+}
+/* ------Top box Image */
+.box6 img{
+    /* float: left; */
+    position: absolute;
+    left: 55%;
+    top: 58%;
+    /* right: 70px; */
+    height: 26vh;
+    border-radius: 6px;
+    
+}
+.box6 h4{
+    margin-top: 4rem;
+    font-family: Build;
+    font-size: 70%;
+}
+.box6 h2{
+    margin-top: 15px;
+    font-family: Build;
+    width: 60%;
+
+}
+.box6 p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: grey;
+    width: 47%;
+    font-size: .9rem;
+    font-family: Inter;
+}
+.box6 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box6 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+}
+
+/* -----------Media Queries for box 6---------- */
+@media (max-width:600px) {
+    .box6{
+        height: 50%;
+        width: 100%;
+        margin: 70px 10px;
+        /* margin-top: 0; */
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        /* padding-top: 0; */
+        /* margin-left: 25%; */
+        /* margin-right: 30%; */
+    }
+    .box6 img{
+        position: absolute;
+        /* position: absolute; */
+    left: 8%;
+    top: 0;
+    /* top: 23%; */
+    /* right: 70px; */
+    height: 25vh;
+    border-radius: 6px;
+    }
+
+    .box6 h4{
+        /* margin-top: 35vh; */
+        margin-top: 35vh;
+        font-family: Build;
+        font-size: 70%;
+        padding-left: 10px;
+        width: 95%;
+        line-height: 1.5;
+        /* margin: 0; */
+    }
+    .box6 h2{
+        margin-top: 10px;
+        font-family: Build;
+        width: 90%;
+        font-size: 17px;
+        /* font-size: 1.5rem; */
+        /* border: 1px solid red; */
+        
+    }
+    .box6 p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: grey;
+        width: 90%;
+        font-size: .9rem;
+        font-family: Inter;
+
+}
+
+.box6 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box6 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+    width: 90%;
+}
+}
+
+/* -----------------==================---------------- */
+
+
+/* ------------Box 7-------------------- */
+
+.box7{
+    height: 50%;
+    width: 50%;
+    color: white;
+    position: relative;
+    /* border: 2px solid grey; */
+    /* margin: 40px 60px; */
+    padding: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* background-color: aqua; */
+    margin-left: 25%;
+    margin-right: 30%;
+    /* margin-top: 30%; */
+}
+/* ------Top box Image */
+.box7 img{
+    /* float: left; */
+    position: absolute;
+    left: 55%;
+    top: 48%;
+    /* right: 70px; */
+    height: 26vh;
+    border-radius: 6px;
+    
+}
+.box7 h4{
+    margin-top: 4rem;
+    font-family: Build;
+    font-size: 70%;
+}
+.box7 h2{
+    margin-top: 15px;
+    font-family: Build;
+    width: 60%;
+
+}
+.box7 p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: grey;
+    width: 47%;
+    font-size: .9rem;
+    font-family: Inter;
+}
+.box7 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box7 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+}
+
+/* ---------Media Queries for box 7-------- */
+@media (max-width:600px) {
+    .box7{
+        height: 50%;
+        width: 100%;
+        margin: 70px 10px;
+        /* margin-top: 0; */
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        /* padding-top: 0; */
+        /* margin-left: 25%; */
+        /* margin-right: 30%; */
+    }
+    .box7 img{
+        position: absolute;
+        /* position: absolute; */
+    left: 8%;
+    top: 0;
+    /* top: 23%; */
+    /* right: 70px; */
+    height: 25vh;
+    border-radius: 6px;
+    }
+
+    .box7 h4{
+        /* margin-top: 35vh; */
+        margin-top: 35vh;
+        font-family: Build;
+        font-size: 70%;
+        padding-left: 10px;
+        width: 95%;
+        line-height: 1.5;
+        /* margin: 0; */
+    }
+    .box7 h2{
+        margin-top: 10px;
+        font-family: Build;
+        width: 90%;
+        font-size: 17px;
+        /* font-size: 1.5rem; */
+        /* border: 1px solid red; */
+        
+    }
+    .box7 p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: grey;
+        width: 90%;
+        font-size: .9rem;
+        font-family: Inter;
+
+}
+
+.box7 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box7 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+    width: 90%;
+}
+}
+
+/* ==========Box 8================== */
+
+.box8{
+    height: 50%;
+    width: 50%;
+    color: white;
+    position: relative;
+    /* border: 2px solid grey; */
+    /* margin: 40px 60px; */
+    padding: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* background-color: aqua; */
+    margin-left: 25%;
+    margin-right: 30%;
+    margin-bottom: 20%;
+    /* margin-top: 30%; */
+}
+/* ------Top box Image */
+.box8 img{
+    /* float: left; */
+    position: absolute;
+    left: 55%;
+    top: 58%;
+    /* right: 70px; */
+    height: 26vh;
+    border-radius: 6px;
+    
+}
+.box8 h4{
+    margin-top: 7px;
+    font-family: Build;
+    font-size: 70%;
+}
+.box8 h2{
+    margin-top: 15px;
+    font-family: Build;
+    width: 60%;
+    font-size: 1.5rem;
+
+}
+.box8 p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: grey;
+    width: 47%;
+    font-size: .9rem;
+    font-family: Inter;
+}
+.box8 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box8 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+}
+
+/* ----------Media Queries for box 8--------- */
+
+@media (max-width:600px) {
+    .box8{
+        height: 50%;
+        width: 100%;
+        margin: 70px 10px;
+        /* margin-top: 0; */
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        /* padding-top: 0; */
+        /* margin-left: 25%; */
+        /* margin-right: 30%; */
+    }
+    .box8 img{
+        position: absolute;
+        /* position: absolute; */
+    left: 8%;
+    top: 0;
+    bottom: 0;
+    /* top: 23%; */
+    /* right: 70px; */
+    height: 25vh;
+    border-radius: 6px;
+    }
+
+    .box8 h4{
+        /* margin-top: 35vh; */
+        margin-top: 20vh;
+        font-family: Build;
+        font-size: 70%;
+        padding-left: 10px;
+        width: 95%;
+        line-height: 1.5;
+        /* margin: 0; */
+    }
+    .box8 h2{
+        margin-top: 10px;
+        font-family: Build;
+        width: 90%;
+        font-size: 17px;
+        /* font-size: 1.5rem; */
+        /* border: 1px solid red; */
+        
+    }
+    .box8 p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: grey;
+        width: 90%;
+        font-size: .9rem;
+        font-family: Inter;
+
+}
+
+.box8 span{
+    color: rgba(119, 119, 119, 0.644);
+}
+.box8 a{
+    font-family: Inter;
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgba(69, 69, 211, 0.822);
+    width: 90%;
+}
+}
+
+.box8 .lastbox{
+    height: 30%;
+    width: 30%;
+    background-color: yellow;
+}

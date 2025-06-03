@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.start-div, .end-div{
+    color: white;
+    height: 100vh;
+    width: 100%;
+    background-color: #090A0C;
+}
+/* ======================================== */
+.carousel{
+    background-color: #090A0C;
+    height: 800vh;
+}
+.contentContainer{
+    height: 80vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+/* =================== */
+
+
+
+
+
+
+
+/* =========== */
+/* -----------------------------Card 1------------------------------ */
+#carousel-card1{
+    height: 80%;
+    width: 42%;
+    background-color: pink;
+    border-radius: 1rem;
+    background-image: url(../../assets/Images/Price-card-1.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 4rem 0 4rem;
+    margin: .2rem 1rem;
+    margin-left: 2rem;
+    /* overflow-y: hidden; */
+}
+#CardOneVideo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+}
+#card-one{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* z-index: 2; */
+}
+.card1-container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 1rem;
+    font-family: Inter;
+    color:whitesmoke ;
+    /* padding: 2rem 3rem; */
+    padding: .8rem 1.2rem;
+    /* margin-left: 2rem; */
+}
+.card1-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card1-container h3{
+    font-size: 1.9rem;
+    margin: 0.5rem 0;
+}
+.card1-container h1{
+    font-size: 3rem;
+    margin-top: .8rem;
+    margin: 0.5rem 0;
+}
+
+.card1-container h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+.card1-container p{
+    font-size: 1.2rem;
+    margin-top: .7rem;
+    margin: 0.5rem 0;
+    /* text-wrap: nowrap; */
+}
+
+.card1-container button{
+    margin-top: 1rem;
+    padding: 1rem 6rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    font-family: Inter;
+
+}
+
+.card1-container a{
+    text-decoration: none;
+    color: #090A0C;
+    /* padding: 4rem 6rem; */
+    /* margin-top: 2rem; */
+}
+/* ============Card 2============== */
+#carousel-card2{
+    height: 80%;
+    /* height: 80%; */
+    width: 42%;
+    /* width: 24%; */
+    background-color: pink;
+    /* border: 1px solid red ; */
+    border-radius: 1rem;
+    background-image: url(../../assets/Images/Price-card-2.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 4rem 0 4rem;
+    margin: .2rem 1rem;
+    margin-left: 2rem;
+}
+.card2-container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 1rem;
+    font-family: Inter;
+    color:whitesmoke ;
+    /* padding: 2rem 3rem; */
+    padding: .8rem 1.2rem;
+    
+}
+.card2-container h3{
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+.card2-container h1{
+    font-size: 3rem;
+    margin-top: .8rem;
+    margin: 0.5rem 0;
+}
+
+.card2-container h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+.card2-container p{
+    font-size: 1.2rem;
+    margin-top: .7rem;
+    margin: 0.5rem 0;
+}
+.card2-container button{
+    margin-top: 1rem;
+    padding: 1rem 6rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    font-family: Inter;
+
+}
+
+.card2-container a{
+    text-decoration: none;
+    color: #090A0C;
+    /* padding: 4rem 6rem; */
+    /* margin-top: 2rem; */
+}
+/* ========================card 3================== */
+#carousel-card3{
+    height: 80%;
+    /* height: 80%; */
+    width: 42%;
+    /* width: 24%; */
+    background-color: pink;
+    /* border: 1px solid red ; */
+    border-radius: 1rem;
+    background-image: url(../../assets/Images/Price-card-3.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 4rem 0 4rem;
+    margin: .2rem 1rem;
+    margin-left: 2rem;
+}
+.card3-container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 1rem;
+    font-family: Inter;
+    color:whitesmoke ;
+    /* padding: 2rem 3rem; */
+    padding: .8rem 1.2rem;
+
+}
+.card3-container h3{
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+
+}
+.card3-container h1{
+    font-size: 3rem;
+    margin-top: .8rem;
+    margin: 0.5rem 0;
+
+}
+
+.card3-container h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+
+}
+.card3-container p{
+    font-size: 1.2rem;
+    /* margin-top: .7rem; */
+    margin: 0.5rem 0;
+
+}
+.card3-container button{
+    margin-top: 1rem;
+    padding: 1rem 6rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    font-family: Inter;
+
+}
+
+.card3-container a{
+    text-decoration: none;
+    color: #090A0C;
+    /* padding: 4rem 6rem; */
+    /* margin-top: 2rem; */
+}
+/* =========Crad 4 ================== */
+#carousel-card4{
+    height: 80%;
+    /* height: 80%; */
+    width: 42%;
+    /* width: 24%; */
+    background-color: pink;
+    /* border: 1px solid red ; */
+    border-radius: 1rem;
+    background-image: url(../../assets/Images/Price-card-4.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 4rem 0 4rem;
+    margin: .2rem 1rem;
+    margin-left: 2rem;
+}
+.card4-container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    /* background-color: red; */
+    border-radius: 1rem;
+    font-family: Inter;
+    color:whitesmoke ;
+    /* padding: 2rem 3rem; */
+    padding: .8rem 1.2rem;
+    position: relative;
+}
+.card4-container h3{
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+.card4-container h1{
+    font-size: 3rem;
+    margin-top: .8rem;
+    margin: 0.5rem 0;
+}
+
+.card4-container h4{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+.card4-container p{
+    font-size: 1.2rem;
+    /* margin: 0.5rem 0; */
+    margin-top: .7rem;
+}
+.card4-container button{
+    margin-top: 1rem;
+    padding: 1rem 6rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    font-family: Inter;
+    /* position: absolute; */
+    /* top: 90%; */
+}
+
+.card4-container a{
+    text-decoration: none;
+    color: #090A0C;
+    /* padding: 4rem 6rem; */
+    /* margin-top: 2rem; */
+}
+
+
+
+/* ]]]]]]]]]]]]]]]] */
+.xyz{
+    height: 80%;
+    width: 30%;
+    background-color: rgba(255, 0, 0, 0);
+}
+.xyz .zyx{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 255, 76, 0.021);
+    position: relative;
+    
+}
+.xyz video{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    border-radius: 2rem;
+    /* z-index: -1; */
+}
+
+.zyx  .abc{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(219, 21, 61, 0.164);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 2rem;
+}

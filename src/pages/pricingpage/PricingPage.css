@@ -1,0 +1,273 @@
+@font-face {
+    font-family: Build;
+    src: url(../../assets/Fonts/ESBuildTRIAL-Semibold-BF6618ac1dd0b22.otf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(../../assets/Fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    background-color: #090A0c;
+    position: relative;
+}
+
+/* -------------Main Content-------- */
+
+.main{
+    position: relative;
+    overflow: hidden;
+    height: 180vh;
+    width: 100%;
+    background-color: #090A0c;
+    /* border: 1px solid yellow; */
+    padding-left: 20%;
+    padding-top: 10%;
+}
+.main p{
+    font-family: Inter;
+    color: aliceblue;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 75%;
+    /* background-color: blueviolet; */
+}
+.main .inline-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+/* .para-img{
+    height: 3%;
+    width: 5%;
+    background-color: aqua;
+    display: inline-block;
+    background-image: url(../../assets/Images//huly-logo-black-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+} */
+
+/* ===========Carousel Animation Cards========= */
+
+#carousel{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    
+
+}
+
+#carousel-card1{
+    height: 80%;
+    width: 24%;
+    background-color: pink;
+    border-radius: 1rem;
+    background-image: url(../../assets/Images/Price-card-1.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card1-container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 1rem;
+    font-family: Inter;
+    color:whitesmoke ;
+    padding: 2rem 3rem;
+}
+.card1-container h3{
+    font-size: 1.3rem;
+}
+.card1-container h1{
+    font-size: 3rem;
+    margin-top: .8rem;
+}
+
+.card1-container h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.card1-container p{
+    font-size: 1.2rem;
+    margin-top: .7rem;
+}
+
+.card1-container button{
+    margin-top: 2rem;
+    padding: 1rem 6rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    font-family: Inter;
+
+}
+
+.card1-container a{
+    text-decoration: none;
+    color: #090A0C;
+    /* padding: 4rem 6rem; */
+    /* margin-top: 2rem; */
+}
+
+
+
+/* ==========Card 2==================== */
+
+#card2{
+    height: 80%;
+    width: 24%;
+    background-color: pink;
+    border-radius: 1rem;
+    background-image: url(../../assets//Images/Price-card-2.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card2-container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 1rem;
+    font-family: Inter;
+    color:whitesmoke ;
+    padding: 2rem 3rem;
+}
+.card2-container h3{
+    font-size: 1.3rem;
+}
+.card2-container h1{
+    font-size: 3rem;
+    margin-top: .8rem;
+}
+
+.card2-container h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.card2-container p{
+    font-size: 1.2rem;
+    margin-top: .7rem;
+}
+.card2-container button{
+    margin-top: 2rem;
+    padding: 1rem 6rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    font-family: Inter;
+
+}
+
+.card2-container a{
+    text-decoration: none;
+    color: #090A0C;
+    /* padding: 4rem 6rem; */
+    /* margin-top: 2rem; */
+}
+
+/* =================Card 3=============== */
+
+#card3{
+    height: 80%;
+    width: 24%;
+    background-color: pink;
+    border-radius: 1rem;
+    background-image: url(../../assets/Images/Price-card-3.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card3-container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 1rem;
+    font-family: Inter;
+    color:whitesmoke ;
+    padding: 2rem 3rem;
+}
+.card3-container h3{
+    font-size: 1.3rem;
+}
+.card3-container h1{
+    font-size: 3rem;
+    margin-top: .8rem;
+}
+
+.card3-container h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.card3-container p{
+    font-size: 1.2rem;
+    margin-top: .7rem;
+}
+.card3-container button{
+    margin-top: 2rem;
+    padding: 1rem 6rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    font-family: Inter;
+
+}
+
+.card3-container a{
+    text-decoration: none;
+    color: #090A0C;
+    /* padding: 4rem 6rem; */
+    /* margin-top: 2rem; */
+}
+
+
+
+/* ========Card 4================ */
+
+
+/* ===========Last para -============ */
+#last-para{
+    height: 80%;
+    width: 100%;
+    background-color: #090A0C;
+    padding-left: 23%;
+    padding-bottom: 6%;
+
+}
+
+#last-para p{
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Inter;
+    width: 70%;
+    line-height: 1.8;
+}
+
+#last-para .contact-us{
+    margin-top: 2rem;
+    color: rgb(127, 202, 228);
+}

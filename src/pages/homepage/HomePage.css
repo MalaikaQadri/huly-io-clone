@@ -1,0 +1,1253 @@
+@font-face {
+    font-family: Build;
+    src: url(../../assets/Fonts/ESBuildTRIAL-Semibold-BF6618ac1dd0b22.otf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(../../assets/Fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+/* -----------Back ground video ------- */
+video{
+    /* height: 130vh; */
+    height: 140vh;
+    width: 100%;
+    /* overflow: hidden; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* z-index: -1; */
+
+}
+
+/* -------------------Main Content-------------- */
+.section1-main{
+    height: 130vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: rgba(0, 255, 255, 0.26); */
+}
+.bg-hover-img{
+     position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none; 
+  z-index: 1;
+ }
+ 
+.section1-main:Hover .bg-hover-img{
+    opacity: 0.06;
+ }
+.section1-content{
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* top: 0; */
+    /* bottom: 0; */
+
+}
+
+.section1-content h1{
+    color: whitesmoke;
+    font-family: Inter;
+    position: absolute;
+    top: 13%;
+    left: 18%;
+    font-size: 2.8rem ;
+    line-height: 1.2;
+}
+.section1-content p{
+    color: rgba(245, 245, 245, 0.863);
+    font-family: Inter;
+    position: absolute;
+    top: 26%;
+    left: 18%;
+    font-size: 1rem ;
+}
+
+.section1-content h4{
+    color: rgba(83, 63, 25, 0.781);
+    font-family: Inter;
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    font-size: .9rem ;
+    font-weight: 600;
+    border: 1px solid whitesmoke;
+    padding: .5rem 3rem;
+    border-radius: 3rem;
+    background-color: rgb(245, 245, 245);
+}
+.section1-content img{
+    height: 47.5%;
+    width: auto;
+    border-radius: 1rem;
+    position: absolute;
+    top: 48.5%;
+    left: 18%;
+}
+
+.section1-content h3{
+    font-family: Inter;
+    color: rgba(245, 245, 245, 0.438);
+    position: absolute;
+    top: 94.5%;
+    left: 19%;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.section1-content h5{
+    font-family: Inter;
+    color: rgb(245, 245, 245);
+    position: absolute;
+    top: 98%;
+    left: 19%;
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+/* --------------Section 2----------------- */
+
+.section2{
+    height: 160vh;
+    width: 100%;
+    position: relative;
+    background-color: #F5F5F6;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding-bottom: 300px; */
+    /* padding-left: 18%; */
+    /* padding-top: 7%; */
+}
+
+
+.section2 .topline{
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: rgb(22, 22, 22);
+    text-wrap: nowrap;
+    padding-bottom: 0;
+    /* font-family: Build; */
+    font-family: Build;
+    position: absolute;
+    top: 9%;
+    left: 12%;
+    /* width: 10wh; */
+}
+
+.section2 .line2{
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: Inter;
+    position: absolute;
+    top: 16%;
+    left: 12%;
+    color: rgba(37, 37, 37, 0.863);
+    text-wrap: wrap;
+    width: 70%;
+    /* padding-top: 0; */
+}
+
+/* ---------------Boxes------------- */
+
+.section2-box{
+    height: 150%;
+    width: 100%;
+    /* border: 1px solid rgb(8, 83, 1); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+/* -------Box 1--------- */
+
+.section2-box .section2-box1{
+    height: 31%;
+    width: 27%;
+    /* border: 1px solid rgb(105, 41, 41); */
+    /* background-color: #3535d4; */
+    position: absolute;
+    top: 27%;
+    left: 12%;
+    border-radius: .7rem;
+    /* box-shadow: 10px 0px 100px 30px rgba(101, 110, 101, 0.397); */
+
+    /* background-image: url(../../assets/Images/box1-img.png); */
+    /* background-image: url(../Assets/Images/Images/box1-img.png); */
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.section2-box .section2-box1 img{
+    height: 100%;
+    width: 100%;
+    /* height: 20rem; */
+    border-radius: .7rem;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    
+}
+.section2-box .section2-box1 h2{
+    position: absolute;
+    bottom : 3%;
+    left: 3%;
+    z-index: 3;
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1;
+    width: 80%;
+}
+
+
+/* -------Box 2------------ */
+
+.section2-box .section2-box2{
+    height: 31%;
+    width: 48%;
+    /* border: 1px solid rgb(141, 78, 192); */
+    /* background-color: red; */
+    position: absolute;
+    top: 27%;
+    left: 40%;
+    border-radius: .7rem;
+    /* box-shadow: 10px 0px 100px 30px rgba(101, 110, 101, 0.397); */
+
+    background-image: url(../../assets/Images/box-2-img.png);
+    /* background-image: url(../Assets/Images/Images/box-2-img.png); */
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+}
+.section2-box .section2-box2 img{
+    height: 100%;
+    width: 100%;
+    /* height: 20rem; */
+    border-radius: .7rem;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    
+}
+.section2-box .section2-box2 h2{
+    position: absolute;
+    bottom : 3%;
+    left: 3%;
+    z-index: 3;
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1;
+    width: 80%;
+}
+
+
+
+
+/* Second line boxes------- */
+
+.section2-box-box{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid rgb(189, 23, 167); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+
+/*---------------- Box 3-------------- */
+
+.section2-box-box .section2-box3{
+    height: 78%;
+    width: 48%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    /* background-color: red; */
+    position: absolute;
+    top: 0%;
+    left: 12%;
+    border-radius: .7rem;
+    /* box-shadow: 10px 0px 100px 30px rgba(101, 110, 101, 0.397); */
+
+    background-image: url(../Assets/Images/Images/box3.png);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.section2-box-box .section2-box3 img{
+    height: 100%;
+    width: 100%;
+    /* height: 20rem; */
+    /* width: 100rem; */
+    border-radius: .7rem;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    
+}
+.section2-box-box .section2-box3 h2{
+    position: absolute;
+    bottom : 3%;
+    left: 3%;
+    z-index: 3;
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1;
+    width: 90%;
+}
+
+
+
+/* --------box 4------------ */
+.section2-box-box .section2-box4{
+    height: 77%;
+    width: 28%;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 0%;
+    left: 61%;
+    border-radius: .7rem;
+    background-color: #2666e7;
+    background-image: url(../Assets/Images/Images/box-4-img.png);
+
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    /* box-shadow: 10px 0px 100px 30px rgba(101, 110, 101, 0.253); */
+
+    background-repeat: no-repeat;
+    /* position: relative; */
+}
+
+.section2-box-box .section2-box4 img{
+    height: 100%;
+    width: 100%;
+    /* height: 20rem; */
+    /* width: 100rem; */
+    border-radius: .7rem;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    
+}
+.section2-box-box .section2-box4 h2{
+    position: absolute;
+    bottom : 3%;
+    left: 3%;
+    z-index: 3;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1.3;
+    width: 90%;
+}
+/* 
+.box5{
+    height: 25%;
+    width: 100%;
+    background-color: #F5F5F6;
+} */
+/* ---------------------------Section - 3--------------------------------- */
+
+
+
+
+
+
+
+
+
+#Section-3{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    background-color: #F5F5F6;
+    position: relative;
+    overflow: hidden;
+}
+
+#video{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#video-ss{
+    height: 52%;
+    width: 45%;
+    background-color: rgba(255, 255, 0, 0.486);
+    /* background-image: url(../Assets/Images/Images/Section3-video-ss.png); */
+    background-image: url(../../assets/Images/Section3-video-ss.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    position: absolute;
+    top: 23%;
+    left: 31.5%;
+}
+#video-ss video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* margin-top: 20%; */
+    /* padding-top: 20%; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h3{
+    font-family: Build;
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    bottom: 20%;
+    color: #090a0cc0;
+    left: 32%;
+    line-height: .8;
+    /* border: 1px solid red; */
+}
+.container h4{
+    font-family: Build;
+    font-size: 1rem;
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    color: #090a0cc0;
+    font-size: 1rem;
+    
+}
+.container p{
+    position: absolute;
+    top: 85%;
+    left: 32%;
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #090a0cc0;
+}
+/* ----------Boxes after video ----------- */
+.three-boxes{
+    height: 50vh;
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 12%;
+}
+/* =======item 1======= */
+.three-box1{
+    height: 100%;
+    /* width: 33.3%; */
+    width: 19%;
+    position: relative;
+}
+.three-box1 h4{
+ font-family: Inter;
+    font-size: 1.7rem;
+    color: #090a0cc5;
+}
+.three-box1 h5{
+    font-family: Inter;
+    font-size: 1rem;
+    color: #090a0ca2;
+    width: 70%;
+}
+.three-box1 img{
+    height: 20%;
+    width: auto;
+}
+/* ===========item 2======== */
+.three-box2{
+    height: 100%;
+    width: 19%;
+    position: relative;
+}
+.three-box2 h4{
+ font-family: Inter;
+    font-size: 1.7rem;
+    color: #090a0cc5;
+}
+.three-box2 h5{
+    font-family: Inter;
+    font-size: 1rem;
+    color: #090a0ca2;
+    width: 70%;
+}
+.three-box2 img{
+    height: 20%;
+    width: auto;
+}
+/* ------------Item 3--------- */
+.three-box3{
+    height: 100%;
+    width: 19%;
+    position: relative;
+}
+.three-box3 h4{
+ font-family: Inter;
+    font-size: 1.7rem;
+    color: #090a0cc5;
+}
+.three-box3 h5{
+    font-family: Inter;
+    font-size: 1rem;
+    color: #090a0ca2;
+    width: 70%;
+}
+.three-box3 img{
+    height: 20%;
+    width: auto;
+}
+
+
+
+/* ------------------ */
+#section3-box2{
+    height: 100%;
+    width: 33.3%;
+    /* background-color: rgb(61, 185, 50); */
+    position: relative;
+    padding-top: 5rem;
+    margin-right: 3rem;
+
+    
+}
+
+#section3-box2 h4{
+    font-family: Inter;
+    font-size: 1.7rem;
+    color: #090a0cc5;
+}
+#section3-box2 h5{
+    font-family: Inter;
+    font-size: 1rem;
+    color: #090a0ca2;
+}
+#section3-box2 img{
+    height: 20%;
+    width: auto;
+}
+
+/* ---------------------- */
+
+#section3-box3{
+    height: 100%;
+    width: 33.3%;
+    /* background-color: rgb(231, 197, 45); */
+    position: relative;
+    padding-top: 5rem;
+    /* display: flex; */
+}
+
+#section3-box3 h4{
+    font-family: Inter;
+    font-size: 1.7rem;
+    color: #090a0cc5;
+}
+#section3-box3 h5{
+    font-family: Inter;
+    font-size: 1rem;
+    color: #090a0ca2;
+}
+
+#section3-box3 img{
+    height: 20%;
+    width: auto;
+}
+
+
+
+
+
+
+/* ---------Section 4 -------------- */
+#Section-4{
+    height: 220vh;
+    width: 100%;
+    background-color: #090A0C;
+    /* border: 2px solid green; */
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#content h1{
+    color: #F5F5F6;
+    font-family: Build;
+    line-height: 1;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+#content p{
+    color: #F5F5F6;
+    font-family: Inter;
+    font-size: 1.1rem;
+    font-weight: 200;
+    width: 40%;
+    position: absolute;
+    top: 18%;
+    left: 25%;
+}
+
+#videobox{
+    height: 30%;
+    width: 55%;
+    /* background-color: #090a0c; */
+    background-color: #090a0c00;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border-radius: .8rem;
+    box-shadow: 0px 10px 100px 6px rgba(31, 39, 31, 0.966);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#videobox::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  /* border: 1px solid white; */
+  pointer-events: none;
+  z-index: 2;
+}
+#videobox .fade-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 5s infinite;
+  /* transition: all ease ; */
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+}
+
+.img2 {
+  animation-delay: 1s;
+}
+
+/* ==================key frames -------------- */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* #videobox::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(
+    135deg,
+    orange 10%,
+    rgba(255, 165, 0, 0.1) 30%,
+    rgba(0, 0, 255, 0.1) 70%,
+    blue 90%
+  );
+  border-radius: inherit;
+  filter: blur(20px);
+  z-index: -1;
+} */
+
+/* ============================== */
+   
+
+
+#feature1{
+    height: 16%;
+    width: 18%;
+    /* background-color: aquamarine; */
+    /* border: 1px solid red; */
+
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    /* text-wrap: wrap; */
+}
+#feature2{
+    height: 16%;
+    width: 18%;
+    /* background-color: rgb(150, 70, 197); */
+    /* border: 1px solid red; */
+
+    position: absolute;
+    top: 60%;
+    left: 45%;
+}
+#feature3{
+    height: 16%;
+    width: 18%;
+    /* background-color: rgb(45, 194, 144); */
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 60%;
+    left: 65%;
+}
+h2{
+    font-family: Inter;
+    font-size: 1.3rem;
+    color: #F5F5F6;
+    padding-top: .8rem;
+    line-height: 1;
+    /* text-wrap: wrap; */
+
+}
+h3{
+    font-family: Inter;
+    font-size: .9rem;
+    color: #f5f5f6b4;
+    padding-top: .9rem;
+    font-weight: 250;
+    width: 80%;
+
+}
+#content img{
+    height: 14%;
+    width: auto;
+    /* font-weight: small; */
+}
+#feature4{
+    height: 16%;
+    width: 18%;
+    /* background-color: rgb(45, 194, 144); */
+    /* border: 1px solid red; */
+    position: absolute;
+    /* top: 62%; */
+    top: 76%;
+    left: 25%;
+}
+#feature5{
+    height: 16%;
+    width: 18%;
+    /* background-color: rgb(45, 194, 144); */
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 76%;
+    left: 45%;
+}
+#feature6{
+    height: 16%;
+    width: 18%;
+    /* background-color: rgb(45, 194, 144); */
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 76%;
+    left: 65%;
+}
+
+/* -------------------Section - 5--------------------------- */
+
+#Section-5{
+    height: 130vh;
+    width: 100%;
+    /* background-color: #F5F5F6; */
+    background-color: #F6F6F6;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* z-index: 10; */
+
+}
+
+#Section-5 h1{
+    font-family: Build;
+    font-size: 7rem;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    color: #090A0C;
+    /* line-height: 1.3; */
+}
+
+#Section-5 h3{
+    font-family: Inter;
+    font-size: 1.2rem;
+    width: 50%;
+    color: #090a0cde;
+    font-weight: 400;
+    position: absolute;
+    top: 21%;
+    left: 25%;
+}
+
+/* ============Bento boxes============ */
+.bentobox{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(255, 255, 0, 0.363); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    /* z-index: -1; */
+    flex-wrap: wrap;
+    /* padding-right: 10%; */
+    /* padding-top: 2rem; */
+    /* padding-left: 13%; */
+}
+
+.bentobox .bento-box1{
+    height: 24%;
+    width: 16%;
+    /* background-color: red; */
+    border-radius: 2rem;
+    /* background-image: url(../Assets/Images/Images/bento1.jpg); */
+    background-image: url(../../assets/Images/bento1.jpg);
+    /* background-image: url(../../assets/Images/bento-1.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    top: 29%;
+    left: 25%;
+    
+}
+.bentobox .bento-box2{
+    height: 24%;
+    width: 16%;
+    /* background-color: red; */
+    /* border-radius: 1rem; */
+    border-radius: 2rem;
+    background-image: url(../../assets/Images/bento-2.png);
+    /* background-image: url(../Assets/Images/Images/bento-2.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    top: 29%;
+    left: 42%;
+    
+}
+.bentobox .bento-box3{
+    height: 24%;
+    width: 16%;
+    /* background-color: red; */
+    /* border-radius: 1rem; */
+    border-radius: 2rem;
+    background-image: url(../../assets/Images/bento3.png);
+    /* background-image: url(../Assets/Images/Images/bento3.png); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    top: 29%;
+    left: 58.5%;
+
+}
+.bentobox .bento-box4{
+    height: 24%;
+    width: 16%;
+    /* background-color: red; */
+    border-radius: 2rem;
+    background-image: url(../../assets/Images/bento4.jpg);
+    /* background-image: url(../Assets/Images/Images/bento4.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    top: 29%;
+    left: 75%;
+}
+.bentobox .bento-box5{
+    height: 24%;
+    width: 16%;
+    background-color: red;
+    border-radius: 2rem;
+    /* background-image: url(../Assets/Images/Images/bento5.jpg); */
+    background-image: url(../../assets/Images/bento5.jpg);
+    /* background-image: url(../Assets/Images/Images/bento1.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    top: 54%;
+    left: 10%;
+}
+.bento-box5 img{
+    /* padding: .8rem .8rem; */
+    padding-top: .8rem;
+    padding-bottom: 0;
+    padding-left: .7rem;
+    height: 18%;
+    /* padding-bottom: 2rem; */
+}
+
+.bento-box5 h2{
+    color: #f5f5f5b4;
+    font-size: .9rem;
+    font-family: Inter;
+    font-weight: 300;
+    /* padding-bottom: 3rem; */
+}
+.bento-box5 span{
+    color: #F5F5F5;
+    
+}
+
+.bentobox .bento-box6{
+    height: 24%;
+    width: 30%;
+    /* background-color: red; */
+    border-radius: 2rem;
+    background-image: url(../../assets/Images/bento6.jpg);
+    /* background-image: url(../Assets/Images/Images/bento6.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    top: 54%;
+    left: 28%;
+}
+.bentobox .bento-box7{
+    height: 24%;
+    width: 25%;
+    /* background-color: red; */
+    border-radius: 2rem;
+    background-image: url(../../assets/Images/bento7.png);
+    /* background-image: url(../Assets/Images/Images/bento7.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    top: 54%;
+    left: 59%;
+}
+/* ==========Text inside boxes ============== */
+.bentobox h2{
+    color: #f5f5f5b4;
+    font-size: .9rem;
+    font-family: Inter;
+    font-weight: 300;
+    padding: 1.2rem 1rem;
+}
+.bentobox span{
+    color: #F5F5F5;
+}
+
+
+/* --------------------Section - 6 -------------------- */
+
+#Section-6{
+    height: 260vh;
+    width: 100%;
+    /* background-color: pink; */
+    background-color: #F6F6F6;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 100px; */
+    position: relative;
+    /* padding-top: 10%; */
+}
+
+
+
+.parabox{
+    height: 100%;
+    /* width: 100%; */
+    width: 48%;
+    /* background-color: yellow;     */
+    position: absolute;
+    top: 0;
+    left: 38%;
+    padding-top: 3%;
+}
+
+.parabox h1{
+    font-family: Build;
+    font-size: 5rem;
+    color: #090a0c;
+    padding-top: 8%;
+    /* color: #090a0cab; */
+    color: #090a0c;
+
+}
+
+.parabox p{
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #090a0c7a;
+    padding-top: 1.7rem;
+    color: #090a0ce0;
+    width: 78%;
+    /* line-height: 1.5 */
+}
+/* =============Text change buttons============ */
+#eventbuttons{
+    height: 3%;
+    width: 50%;
+    border-radius: .6rem;
+    background-color: #090a0cf1;
+    margin-top: 1rem;
+    /* margin-bottom: 0; */
+    /* padding-bottom: 0; */
+    position: relative;
+    top: 1%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 1% 1%;
+    margin-left: 10rem;
+
+}
+#eventbuttons .eve-box1{
+        height: 100%;
+        width: 21%;
+        background-color: #5683DA;
+        /* margin-top: 2%; */
+        margin-left: 1%;
+        border-radius: .3rem;
+        color: #F5F5F5;
+        padding: .6rem ;
+        /* margin: 1% 1%; */
+}
+.eve-box1 h6{
+    color: #F5F5F5;
+    padding-bottom: 1rem;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    /* position: absolute; */
+    /* top: 0; */
+}
+#eventbuttons .eve-box2{
+height: 100%;
+width: 11%;
+/* background-color: red;   */
+padding-left: 10px;
+padding-bottom: 10px;
+margin-left: 2%;
+padding-top: 0;
+border-left: 1px solid grey;
+/* padding: 10px; */
+/* padding-bottom: 10px; */
+}
+#eventbuttons .eve-box3{
+        height: 100%;
+        width: 11%;
+padding-left: 8px;
+padding-bottom: 10px;
+padding-top: 0;
+}
+
+
+
+#eventbuttons .eve-box4{
+        height: 100%;
+        width: 11%;
+        /* background-color: rgb(0, 255, 255); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+#eventbuttons .eve-box5{
+        height: 100%;
+        width: 11%;
+        padding-top: 8px;
+        /* background-color: rgb(21, 255, 0); */
+        border-right: 1px solid grey;
+        /* padding-right: 10px; */
+
+}
+#eventbuttons .eve-box6{
+        height: 100%;
+        width: 15%;
+        padding-left: 10px;
+        padding-bottom: 12px;
+        /* background-color: rgb(255, 0, 179); */
+}
+.eve-box6 h3{
+    color: white;
+    /* font-family: 2rem; */
+    font-size: 1.9rem;
+}
+
+
+#eventbuttons .eve-box7{
+        height: 100%;
+        width: 15%;
+        padding-top: 6px;
+        /* background-color: rgb(200, 255, 0); */
+
+}
+
+
+/* +++++++++++++++======== */
+
+
+
+
+
+
+#billboard{
+    height: 23%;
+    width: 100%;
+    background-color: rgb(68, 0, 255);
+    border-radius: .8rem;
+
+}
+
+#billboard img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .8rem;
+}
+
+
+#img-code-1 img{
+    height: 50%;
+    width: 100%;
+    /* background-color: #2666e7; */
+}
+
+
+#codeimg{
+    height: 15%;
+    /* height: 18%; */
+    width: 84%;
+    background-color: rgb(27, 13, 150);
+    border-radius: .8rem;
+    /* background-image: url(../../assets/Images/code-img.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* margin-top: 2rem; */
+
+}
+/* 
+#Section-6 h2{
+    color: #090A0C;
+} */
+
+/* ================Images between text ======= */
+.parabox .CircleImgTwo{
+    position: absolute;
+    bottom: 42%;
+    left: 70%;
+
+}
+.parabox .CircleImgOne{
+    position: absolute;
+    bottom: 86.5%;
+    left: 63%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

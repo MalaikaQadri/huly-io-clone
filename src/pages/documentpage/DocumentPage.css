@@ -1,0 +1,267 @@
+@font-face {
+  font-family: Inter;
+  src: url(../../assets/Fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --primary-color: #242839;   
+    --secondary-color: #1A1928; 
+    --accent-color: #B2CAF2;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+  /* background-color: #131225; */
+  background-color: var(--secondary-color);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  /* color: #91b3f5; */
+  color: var(--accent-color);
+  font-size: 2rem;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+
+.search-box {
+  position: relative;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  /* padding: 2rem 2rem; */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  border: 1px solid #b2caf23d;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #cbd5e1;
+  padding-right: 20px;
+  font-size: 0.9rem;
+}
+
+.edit-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 0.75rem;
+  color: #cbd5e1;
+  pointer-events: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.right a {
+  color: #91b3f5;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  filter: invert(70%);
+}
+
+.mode-toggle {
+  color: #cbd5e1;
+  font-size: 1.2rem;
+}
+
+.document-main{
+    height: 90vh;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    /* background-color: #242839; */
+    /* background-color: #242839; */
+    background-color: var(--primary-color);
+}
+/* =================Left box============== */
+.left-box{
+  height: 90%;
+  width: 60%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* justify-content: ; */
+  padding-top: 12rem;
+  padding-left: 7rem;
+  /* background-color: red; */
+}
+.left-box h1{
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 4rem;
+  line-height: 2;
+}
+.left-box p{
+  font-family: Inter;
+  font-size: 1.8rem;
+  color: #ffffffd3;
+  font-weight: 300;
+}
+.left-box h4{
+  color:  var(--primary-color);
+  font-family: Inter;
+  font-weight: 400;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  padding: 1.4rem 3rem;
+  border-radius: 3rem;
+  font-size: 1.7rem;
+  /* gap: 2rem; */
+  margin-bottom: 2rem;
+}
+/* ==============Right Box ============== */
+.right-box{
+  height: 100%;
+  width: 40%;
+  padding-top: 4%;
+  /* background-color: rgb(30, 255, 0); */
+}
+.right-box img{
+  height: 85%;
+  width: 100%;
+  object-fit: contain;
+}
+/* ==============Four boxes ============= */
+.four-boxes{
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  /* border: 1px solid var(--secondary-color); */
+  display: flex;
+  position: relative;
+}
+/* ==========Left box========== */
+.four-boxes .left-boxes{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+.four-boxes .left-boxes h1{
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 3rem;
+  position: relative;
+  left: 15%;
+}
+/* ==========Further boxes ======= */
+.left-box-one{
+  height: 25%;
+  width: 75%;
+  /* background-color: red; */
+  position: relative;
+  left: 15%;
+  border: 1px solid #383838;
+  padding: 2rem 3rem;
+  
+}
+.left-box-two{
+  height: 25%;
+  width: 75%;
+  /* background-color: yellowgreen; */
+  border: 1px solid #383838;
+  padding: 2rem 3rem;
+  
+   position: relative;
+  left: 15%;
+}
+/* ==========Right boxes =========== */
+.four-boxes .right-boxes{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid red; */
+  background-color: var(--primary-color);
+  padding-top: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+/* ==============Further boxes ========= */
+.right-box-one{
+  height: 30%;
+  width: 80%;
+  /* background-color: red; */
+  position: relative;
+  left: 6%;
+  border: 1px solid #383838;
+  padding: 2rem 3rem;
+  
+}
+.right-box-two{
+  height: 30%;
+  width: 75%;
+  /* background-color: yellowgreen; */
+  border: 1px solid #383838;
+   position: relative;
+  left: 6%;
+  padding: 2rem 3rem;
+}
+/* ==============Text inside boxes ========= */
+.four-boxes h4{
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-family: Inter;
+  line-height: 1.8;
+  text-wrap: nowrap;
+}
+.four-boxes p{
+  color: #ffffffc4;
+  font-size: 1.2rem;
+  font-family: Inter;
+  font-weight: 400;
+}
+.four-boxes a{
+  text-decoration: none;
+  color: lightblue;
+}
+.left-box-one img{
+  height: 20%;
+  width: 100%;
+  /* color: #FFFFFF; */
+}
+
+
+
+
