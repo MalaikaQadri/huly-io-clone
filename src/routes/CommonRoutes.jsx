@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes} from "react-router";
+import { Route, Routes} from "react-router-dom";
 import HomePage from '.././pages/homepage/HomePage'
 import PricingPage from '.././pages/pricingpage/PricingPage'
 import Blogpge from '.././pages/blogpage/BlogPge'
