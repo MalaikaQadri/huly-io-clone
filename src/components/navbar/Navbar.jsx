@@ -9,7 +9,7 @@ import { SiLinkedin } from "react-icons/si";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Hulylogo from "../../assets/Images/huly-logo-png.jpeg";
 // import Hulylogo from '../../assets/Images/huly-logo-png.jpeg'
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <div>
