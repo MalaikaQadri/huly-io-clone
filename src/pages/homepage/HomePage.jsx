@@ -35,7 +35,7 @@ import Lastimg from '../../assets/Images/huly-web-png.png'
 import Footer from '../../components/footer/footer2/Footer'
 import Mainfooter from '../../components/footer/mainfooter/Mainfooter'
 import VideoSsone from '../../assets/Images/Screenshot-github-1.png'
-import VideoSstwo from '../../assets/Images/Video-ss.png'
+import VideoSstwo from '../../assets/Images/video-ss.png'
 
 import { FaBold } from "react-icons/fa";
 import { FaItalic } from "react-icons/fa";
