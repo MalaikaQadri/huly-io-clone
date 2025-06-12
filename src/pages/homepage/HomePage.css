@@ -9,24 +9,24 @@
 *{
     margin: 0;
     padding: 0;
+        /* box-sizing: ; */
     box-sizing: border-box;
+    /* background-color: #F6F6F6; */
 }
 html,body{
     height: 100%;
     width: 100%;
-    background-color: transparent;
+    background-color: #F6F6F6;
 }
 /* -----------Back ground video ------- */
 video{
-    /* height: 130vh; */
     height: 140vh;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
     object-fit: cover;
-    /* z-index: -1; */
 
 }
 
@@ -36,6 +36,7 @@ video{
     width: 100%;
     position: relative;
     overflow: hidden;
+    /* background-color: white; */
     /* background-color: rgba(0, 255, 255, 0.26); */
 }
 .bg-hover-img{
@@ -127,12 +128,188 @@ video{
     font-size: .7rem;
     font-weight: 400;
 }
+/* ---------------Mobile responsive Section 1------------- */
 
+@media only screen and (min-width:320px) and (max-width:767px) {
+/* -----------Back ground video ------- */
+video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.section1-main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bg-hover-img{
+    display: none;
+ }
+ 
 
+.section1-content{
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
+}
 
+.section1-content h1{
+    color: whitesmoke;
+    font-family: Inter;
+    position: absolute;
+    top: 13%;
+    left: 18%;
+    font-size: 2rem ;
+    line-height: 1.2;
+}
+.section1-content p{
+    color: rgba(245, 245, 245, 0.863);
+    font-family: Inter;
+    position: absolute;
+    top: 26%;
+    left: 18%;
+    font-size: 1rem ;
+}
 
+.section1-content h4{
+    color: rgba(83, 63, 25, 0.781);
+    font-family: Inter;
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    font-size: .9rem ;
+    font-weight: 600;
+    border: 1px solid whitesmoke;
+    padding: .5rem 3rem;
+    border-radius: 3rem;
+    background-color: rgb(245, 245, 245);
+}
+.section1-content img{
+    height: 39%;
+    width: auto;
+    border-radius: .4rem;
+    position: absolute;
+    top: 51%;
+    left: 16%;
+}
 
+.section1-content h3{
+    font-family: Inter;
+    color: rgba(245, 245, 245, 0.438);
+    position: absolute;
+    top: 90%;
+    left: 16%;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.section1-content h5{
+    font-family: Inter;
+    color: rgb(245, 245, 245);
+    position: absolute;
+    top: 95%;
+    left: 16%;
+    font-size: .7rem;
+    font-weight: 400;
+}
+}
+/* ----------Tab responsive---------- */
+@media only screen and (min-width:767px) and (max-width:959px){
+    video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.section1-main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bg-hover-img{
+    display: none;
+ }
+ 
+
+.section1-content{
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.section1-content h1{
+    color: whitesmoke;
+    font-family: Inter;
+    position: absolute;
+    top: 13%;
+    left: 18%;
+    font-size: 2rem ;
+    line-height: 1.2;
+}
+.section1-content p{
+    color: rgba(245, 245, 245, 0.863);
+    font-family: Inter;
+    position: absolute;
+    top: 26%;
+    left: 18%;
+    font-size: 1rem ;
+}
+
+.section1-content h4{
+    color: rgba(83, 63, 25, 0.781);
+    font-family: Inter;
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    font-size: .9rem ;
+    font-weight: 600;
+    border: 1px solid whitesmoke;
+    padding: .5rem 3rem;
+    border-radius: 3rem;
+    background-color: rgb(245, 245, 245);
+}
+.section1-content img{
+    height: 43%;
+    width: auto;
+    border-radius: .4rem;
+    position: absolute;
+    top: 51%;
+    left: 18%;
+}
+
+.section1-content h3{
+    font-family: Inter;
+    color: rgba(245, 245, 245, 0.438);
+    position: absolute;
+    top: 90%;
+    left: 16%;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.section1-content h5{
+    font-family: Inter;
+    color: rgb(245, 245, 245);
+    position: absolute;
+    top: 95%;
+    left: 16%;
+    font-size: .7rem;
+    font-weight: 400;
+}
+}
 
 /* --------------Section 2----------------- */
 
@@ -145,12 +322,7 @@ video{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* padding-bottom: 300px; */
-    /* padding-left: 18%; */
-    /* padding-top: 7%; */
 }
-
-
 .section2 .topline{
     font-size: 4.8rem;
     font-weight: bold;
@@ -164,7 +336,6 @@ video{
     left: 12%;
     /* width: 10wh; */
 }
-
 .section2 .line2{
     font-size: 1.5rem;
     font-weight: normal;
@@ -195,16 +366,10 @@ video{
 .section2-box .section2-box1{
     height: 31%;
     width: 27%;
-    /* border: 1px solid rgb(105, 41, 41); */
-    /* background-color: #3535d4; */
     position: absolute;
     top: 27%;
     left: 12%;
     border-radius: .7rem;
-    /* box-shadow: 10px 0px 100px 30px rgba(101, 110, 101, 0.397); */
-
-    /* background-image: url(../../assets/Images/box1-img.png); */
-    /* background-image: url(../Assets/Images/Images/box1-img.png); */
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -275,9 +440,6 @@ video{
     width: 80%;
 }
 
-
-
-
 /* Second line boxes------- */
 
 .section2-box-box{
@@ -290,9 +452,6 @@ video{
     position: relative;
 
 }
-
-
-
 /*---------------- Box 3-------------- */
 
 .section2-box-box .section2-box3{
@@ -334,8 +493,6 @@ video{
     line-height: 1;
     width: 90%;
 }
-
-
 
 /* --------box 4------------ */
 .section2-box-box .section2-box4{
@@ -379,20 +536,104 @@ video{
     line-height: 1.3;
     width: 90%;
 }
-/* 
-.box5{
-    height: 25%;
+/* mobile responsive section 2 */
+@media only screen and (min-width:320px) and (max-width:767px) {
+    /* ----------Section 2------- */
+    .section2{
+    height: 160vh;
     width: 100%;
-    background-color: #F5F5F6;
-} */
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.section2 .topline{
+    font-size: 1rem;
+    text-wrap: wrap;
+    line-height: .8;
+    /* width: 10wh; */
+}
+.section2 .line2{
+    font-size: 1rem;
+    position: absolute;
+    top: 18%;
+    left: 12%;
+    width: 80%;
+}
+/* ---------------Boxes------------- */
+.section2-box{
+    height: 150%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+/* -------Box 1--------- */
+
+.section2-box .section2-box1{
+    height: 31%;
+    width: 85%;
+    position: absolute;
+    top: 29%;
+    left: 8%;
+}
+.section2-box .section2-box1 h2{
+    font-size: .8rem;
+    line-height: 1.2;
+}
+/* -----------Box 2----------- */
+.section2-box .section2-box2{
+    width: 85%;
+    position: absolute;
+    top: 61%;
+    left: 8%;
+
+}
+
+.section2-box .section2-box2 h2{
+    font-size: .8rem;
+    line-height: 1.2;
+}
+/* Second line boxes------- */
+
+.section2-box-box{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid rgb(189, 23, 167); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: yellow; */
+}
+/* -------------Box 3----- */
+.section2-box-box .section2-box3{
+    height: 71%;
+    width: 85%;
+    position: absolute;
+    top: 82%;
+    left: 8%;
+    display: none;
+}
+
+.section2-box-box .section2-box3 img{
+    background-position: center;
+}
+.section2-box-box .section2-box3 h2{
+    font-size: .8rem;
+    line-height: 1.2;
+}
+.section2-box-box .section2-box4{
+    display: none;
+}
+
+}
+
+
+
 /* ---------------------------Section - 3--------------------------------- */
-
-
-
-
-
-
-
 
 
 #Section-3{
@@ -608,8 +849,325 @@ video{
     width: auto;
 }
 
+/* -----------Mobile responsive -------- */
+@media only screen and (min-width:320px) and (max-width:767px){
+    #Section-3{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    background-color: #F5F5F6;
+    position: relative;
+    overflow: hidden;
+}
+
+#video{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#video-ss{
+    height: 42%;
+    width: 60%;
+    border-radius: .7rem;
+    position: absolute;
+    top: 28%;
+    left: 25%;
+}
+#video-ss video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 2rem;
+}
 
 
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* margin-top: 20%; */
+    /* padding-top: 20%; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h3{
+    font-family: Build;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    bottom: 20%;
+    color: #090a0cc0;
+    left: 26%;
+    line-height: .8;
+    /* border: 1px solid red; */
+}
+.container h4{
+    font-family: Build;
+    font-size: .8rem;
+    position: absolute;
+    top: 15%;
+    left: 26%;
+    color: #090a0cc0;
+    font-size: 1rem;
+    width: 55%;
+}
+.container p{
+    position: absolute;
+    top: 85%;
+    left: 26%;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #090a0cc0;
+}
+
+/* -----------------Boxes after video--------- */
+.three-boxes{
+    height: 50vh;
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 12%;
+}
+/* =======item 1======= */
+.three-box1{
+    height: 100%;
+    /* width: 33.3%; */
+    width: 19%;
+    position: relative;
+    margin-right: 6%;
+    
+}
+.three-box1 h4{
+ font-family: Inter;
+    font-size: 1rem;
+    color: #090a0cc5;
+}
+.three-box1 h5{
+    font-family: Inter;
+    font-size: .8rem;
+    color: #090a0ca2;
+    width: 100%;
+}
+.three-box1 img{
+    height: 15%;
+    width: auto;
+}
+/* ===========item 2======== */
+.three-box2{
+    height: 100%;
+    width: 19%;
+    position: relative;
+    margin-right: 6%;
+
+}
+.three-box2 h4{
+ font-family: Inter;
+    font-size: 1rem;
+    color: #090a0cc5;
+}
+.three-box2 h5{
+    font-family: Inter;
+    font-size: .8rem;
+    color: #090a0ca2;
+    width: 100%;
+}
+.three-box2 img{
+    height: 15%;
+    width: auto;
+}
+/* ------------Item 3--------- */
+.three-box3{
+    height: 100%;
+    width: 19%;
+    position: relative;
+}
+.three-box3 h4{
+ font-family: Inter;
+    font-size: 1rem;
+    color: #090a0cc5;
+}
+.three-box3 h5{
+    font-family: Inter;
+    font-size: .8rem;
+    color: #090a0ca2;
+    width: 100%;
+}
+.three-box3 img{
+    height: 15%;
+    width: auto;
+}
+
+}
+
+/* ----------Tab responsive---------- */
+@media only screen and (min-width:767px) and (max-width:959px){
+    #Section-3{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    background-color: #F5F5F6;
+    position: relative;
+    overflow: hidden;
+}
+
+#video{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#video-ss{
+    height: 42%;
+    width: 60%;
+    border-radius: .7rem;
+    position: absolute;
+    top: 28%;
+    left: 25%;
+}
+#video-ss video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* margin-top: 20%; */
+    /* padding-top: 20%; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h3{
+    font-family: Build;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    bottom: 20%;
+    color: #090a0cc0;
+    left: 26%;
+    line-height: .8;
+    /* border: 1px solid red; */
+}
+.container h4{
+    font-family: Build;
+    font-size: .8rem;
+    position: absolute;
+    top: 15%;
+    left: 26%;
+    color: #090a0cc0;
+    font-size: 1rem;
+    width: 55%;
+}
+.container p{
+    position: absolute;
+    top: 85%;
+    left: 26%;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #090a0cc0;
+}
+
+/* -----------------Boxes after video--------- */
+.three-boxes{
+    height: 50vh;
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 12%;
+}
+/* =======item 1======= */
+.three-box1{
+    height: 100%;
+    /* width: 33.3%; */
+    width: 19%;
+    position: relative;
+    margin-right: 6%;
+    
+}
+.three-box1 h4{
+ font-family: Inter;
+    font-size: 1rem;
+    color: #090a0cc5;
+}
+.three-box1 h5{
+    font-family: Inter;
+    font-size: .8rem;
+    color: #090a0ca2;
+    width: 100%;
+}
+.three-box1 img{
+    height: 15%;
+    width: auto;
+}
+/* ===========item 2======== */
+.three-box2{
+    height: 100%;
+    width: 19%;
+    position: relative;
+    margin-right: 6%;
+
+}
+.three-box2 h4{
+ font-family: Inter;
+    font-size: 1rem;
+    color: #090a0cc5;
+}
+.three-box2 h5{
+    font-family: Inter;
+    font-size: .8rem;
+    color: #090a0ca2;
+    width: 100%;
+}
+.three-box2 img{
+    height: 15%;
+    width: auto;
+}
+/* ------------Item 3--------- */
+.three-box3{
+    height: 100%;
+    width: 19%;
+    position: relative;
+}
+.three-box3 h4{
+ font-family: Inter;
+    font-size: 1rem;
+    color: #090a0cc5;
+}
+.three-box3 h5{
+    font-family: Inter;
+    font-size: .8rem;
+    color: #090a0ca2;
+    width: 100%;
+}
+.three-box3 img{
+    height: 15%;
+    width: auto;
+}
+
+}
 
 
 
@@ -716,29 +1274,6 @@ video{
   }
 }
 
-/* #videobox::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  background: linear-gradient(
-    135deg,
-    orange 10%,
-    rgba(255, 165, 0, 0.1) 30%,
-    rgba(0, 0, 255, 0.1) 70%,
-    blue 90%
-  );
-  border-radius: inherit;
-  filter: blur(20px);
-  z-index: -1;
-} */
-
-/* ============================== */
-   
-
-
 #feature1{
     height: 16%;
     width: 18%;
@@ -821,6 +1356,144 @@ h3{
     left: 65%;
 }
 
+/* -----------Mobile responsive--------- */
+@media only screen and (min-width:320px) and (max-width:767px){
+    #Section-4{
+    height: 220vh;
+    width: 100%;
+    background-color: #090A0C;
+    /* border: 2px solid green; */
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#content h1{
+    color: #F5F5F6;
+    font-family: Build;
+    line-height: 1;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+#content p{
+    color: #F5F5F6;
+    font-family: Inter;
+    font-size: .9rem;
+    font-weight: 200;
+    width: 60%;
+    position: absolute;
+    top: 18%;
+    left: 25%;
+}
+
+#videobox{
+    height: 30%;
+    width: 75%;
+    /* background-color: #090a0c; */
+    background-color: #f8f9fc0c;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border-radius: .8rem;
+    box-shadow: 0px 10px 100px 6px rgba(31, 39, 31, 0.966);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+#feature1{
+    height: 16%;
+    width: 18%;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+#feature2{
+    height: 16%;
+    width: 18%;
+    /* background-color: rgb(150, 70, 197); */
+    /* border: 1px solid red; */
+
+    position: absolute;
+    top: 60%;
+    left: 45%;
+}
+#feature3{
+    height: 16%;
+    width: 18%;
+    /* background-color: rgb(45, 194, 144); */
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 60%;
+    left: 65%;
+}
+h2{
+    font-family: Inter;
+    font-size: .9rem;
+    color: #F5F5F6;
+    padding-top: .8rem;
+    line-height: 1;
+    /* text-wrap: wrap; */
+
+}
+h3{
+    font-family: Inter;
+    font-size: .7rem;
+    color: #f5f5f6b4;
+    padding-top: .9rem;
+    font-weight: 250;
+    width: 80%;
+
+}
+#content img{
+    height: 14%;
+    width: auto;
+    /* font-weight: small; */
+}
+#feature4{
+    height: 16%;
+    width: 18%;
+    /* background-color: rgb(45, 194, 144); */
+    /* border: 1px solid red; */
+    position: absolute;
+    /* top: 62%; */
+    top: 76%;
+    left: 25%;
+}
+#feature5{
+    height: 16%;
+    width: 18%;
+    /* background-color: rgb(45, 194, 144); */
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 76%;
+    left: 45%;
+}
+#feature6{
+    height: 16%;
+    width: 18%;
+    /* background-color: rgb(45, 194, 144); */
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 76%;
+    left: 65%;
+}
+}
+
 /* -------------------Section - 5--------------------------- */
 
 #Section-5{
@@ -839,23 +1512,23 @@ h3{
 
 #Section-5 h1{
     font-family: Build;
-    font-size: 7rem;
+    font-size: 5.8rem;
     position: absolute;
     top: 10%;
-    left: 25%;
+    left: 20%;
     color: #090A0C;
     /* line-height: 1.3; */
 }
 
 #Section-5 h3{
     font-family: Inter;
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 50%;
     color: #090a0cde;
     font-weight: 400;
     position: absolute;
     top: 21%;
-    left: 25%;
+    left: 20%;
 }
 
 /* ============Bento boxes============ */
@@ -1020,6 +1693,300 @@ h3{
     color: #F5F5F5;
 }
 
+/* ------------Mobile responsive-------------- */
+@media only screen and (min-width:320px) and (max-width:767px){
+#Section-5{
+    height: 130vh;
+    width: 100%;
+    background-color: #F6F6F6;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 180%;
+    /* z-index: 10; */
+
+}
+
+#Section-5 h1{
+    font-family: Build;
+    font-size: 3rem;
+    position: absolute;
+    top: 6%;
+    left: 16%;
+    color: #090A0C;
+    line-height: .9;
+    text-wrap: wrap;
+}
+
+#Section-5 h3{
+    font-family: Inter;
+    font-size: .8rem;
+    width: 60%;
+    color: #090a0cde;
+    font-weight: 400;
+    position: absolute;
+    top: 12%;
+    left: 16%;
+}
+
+/* ============Bento boxes============ */
+.bentobox{
+    height: 100%vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+.bentobox .bento-box1{
+    height: 24%;
+    width: 68%;
+    /* background-color: red; */
+    border-radius: 1rem;
+    position: absolute;
+    top: 24%;
+    left: 16%;
+    
+}
+.bentobox .bento-box2{
+    height: 24%;
+    width: 68%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    
+}
+.bentobox .bento-box3{
+    height: 24%;
+    width: 68%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 75%;
+    left: 16%;
+
+}
+.bentobox .bento-box4{
+    height: 24%;
+    width: 68%;
+    /* background-color: red; */
+    border-radius: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 16%;
+}
+.bentobox .bento-box5{
+    height: 24%;
+    width: 68%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 128%;
+    left: 16%;
+    background-color: transparent;
+}
+.bento-box5 img{
+    /* padding: .8rem .8rem; */
+    padding-top: .8rem;
+    padding-bottom: 0;
+    padding-left: .7rem;
+    height: 18%;
+    /* padding-bottom: 2rem; */
+}
+
+.bento-box5 h2{
+    color: #f5f5f5b4;
+    font-size: .9rem;
+    font-family: Inter;
+    font-weight: 300;
+    /* padding-bottom: 3rem; */
+}
+.bento-box5 span{
+    color: #F5F5F5;
+    
+}
+
+.bentobox .bento-box6{
+    height: 24%;
+    width: 68%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 155%;
+    left: 16%;
+}
+.bentobox .bento-box7{
+    height: 24%;
+    width: 68%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 183%;
+    left: 16%;
+}
+/* ==========Text inside boxes ============== */
+.bentobox h2{
+    color: #f5f5f5b4;
+    font-size: .9rem;
+    font-family: Inter;
+    font-weight: 300;
+    padding: 1.2rem 1rem;
+}
+.bentobox span{
+    color: #F5F5F5;
+}
+
+}
+/* ---------------------Tab responsive---------------------- */
+@media only screen and (min-width:767px) and (max-width:959px){
+#Section-5{
+    height: 130vh;
+    width: 100%;
+    background-color: #F6F6F6;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 180%;
+    /* z-index: 10; */
+
+}
+
+#Section-5 h1{
+    font-family: Build;
+    font-size: 3rem;
+    position: absolute;
+    top: 6%;
+    left: 22%;
+    color: #090A0C;
+    line-height: .9;
+    text-wrap: wrap;
+}
+
+#Section-5 h3{
+    font-family: Inter;
+    font-size: .8rem;
+    width: 60%;
+    color: #090a0cde;
+    font-weight: 400;
+    position: absolute;
+    top: 12%;
+    left: 22%;
+}
+
+/* ============Bento boxes============ */
+.bentobox{
+    height: 100%vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+.bentobox .bento-box1{
+    height: 34%;
+    width: 68%;
+    /* background-color: red; */
+    border-radius: 1rem;
+    position: absolute;
+    top: 24%;
+    left: 22%;
+    
+}
+.bentobox .bento-box2{
+    height: 34%;
+    width: 68%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    
+}
+.bentobox .bento-box3{
+    height: 24%;
+    width: 68%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 95%;
+    left: 22%;
+
+}
+.bentobox .bento-box4{
+    height: 34%;
+    width: 68%;
+    /* background-color: red; */
+    border-radius: 1rem;
+    position: absolute;
+    top: 120%;
+    left: 22%;
+}
+.bentobox .bento-box5{
+    height: 34%;
+    width: 68%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 155%;
+    left: 22%;
+    background-color: transparent;
+}
+.bento-box5 img{
+    /* padding: .8rem .8rem; */
+    padding-top: .8rem;
+    padding-bottom: 0;
+    padding-left: .7rem;
+    height: 18%;
+    /* padding-bottom: 2rem; */
+}
+
+.bento-box5 h2{
+    color: #f5f5f5b4;
+    font-size: .9rem;
+    font-family: Inter;
+    font-weight: 300;
+    /* padding-bottom: 3rem; */
+}
+.bento-box5 span{
+    color: #F5F5F5;
+    
+}
+
+.bentobox .bento-box6{
+    height: 34%;
+    width: 68%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 190%;
+    left: 22%;
+}
+.bentobox .bento-box7{
+    height: 34%;
+    width: 68%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 225%;
+    left: 22%;
+}
+/* ==========Text inside boxes ============== */
+.bentobox h2{
+    color: #f5f5f5b4;
+    font-size: .9rem;
+    font-family: Inter;
+    font-weight: 300;
+    padding: 1.2rem 1rem;
+}
+.bentobox span{
+    color: #F5F5F5;
+}
+}
+
 
 /* --------------------Section - 6 -------------------- */
 
@@ -1171,15 +2138,7 @@ padding-top: 0;
         /* background-color: rgb(200, 255, 0); */
 
 }
-
-
 /* +++++++++++++++======== */
-
-
-
-
-
-
 #billboard{
     height: 23%;
     width: 100%;
@@ -1235,8 +2194,436 @@ padding-top: 0;
     left: 63%;
 }
 
+/* --------------Mobile responsive-------------- */
+@media only screen and (min-width:320px) and (max-width:767px){
+#Section-6{
+    height: 260vh;
+    width: 100%;
+    /* background-color: pink; */
+    background-color: #F6F6F6;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 100px; */
+    position: relative;
+    /* padding-top: 10%; */
+}
+
+.parabox{
+    height: 100%;
+    /* width: 100%; */
+    width: 72%;
+    background-color: yellow;    
+    position: absolute;
+    top: 0;
+    left: 18%;
+    padding-top: 3%;
+}
+
+.parabox h1{
+    font-family: Build;
+    font-size: 2rem;
+    color: #090a0c;
+    padding-top: 4%;
+    /* color: #090a0cab; */
+    color: #090a0c;
+
+}
+
+.parabox p{
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #090a0c7a;
+    padding-top: .7rem;
+    color: #090a0ce0;
+    width: 100%;
+    /* line-height: 1.5 */
+}
+/* =============Text change buttons============ */
+.event-icons-box{
+    font-size: 9px;
+    height: 15px;
+    position: absolute;
+    top: 8%;
+}
+
+.event-icons-boxs{
+    font-size: 9px;
+    height: 10px;
+    position: absolute;
+    top: 0%;
+}
 
 
+#eventbuttons{
+    height: 2%;
+    width: 100%;
+    border-radius: .2rem;
+    background-color: #090a0cf1;
+    margin-top: 1rem;
+    position: relative;
+    top: 0%;
+    display: flex;
+    padding: 1% 1%;
+    margin-left: 0rem;
+
+}
+#eventbuttons .eve-box1{
+        height: 100%;
+        width: 21%;
+        background-color: #5683DA;
+        /* margin-top: 2%; */
+        margin-left: 1%;
+        border-radius: .3rem;
+        color: #F5F5F5;
+        padding: .2rem ;
+        /* margin: 1% 1%; */
+}
+.eve-box1 h6{
+    color: #F5F5F5;
+    padding-bottom: 1rem;
+    font-family: Inter;
+    font-size: .7rem;
+    font-weight: 500;
+}
+#eventbuttons .eve-box2{
+height: 100%;
+width: 11%;
+padding-left: 10px;
+padding-bottom: 15px;
+margin-left: 2%;
+padding-top: 0;
+border-left: 1px solid grey;
+}
+#eventbuttons .eve-box3{
+height: 100%;
+width: 11%;
+padding-left: 8px;
+padding-bottom: 0;
+padding-top: 0;
+}
+
+
+#eventbuttons .eve-box4{
+        height: 100%;
+        width: 11%;
+        /* background-color: rgb(0, 255, 255); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+#eventbuttons .eve-box5{
+        height: 100%;
+        width: 11%;
+        padding-top: 8px;
+        /* background-color: rgb(21, 255, 0); */
+        border-right: 1px solid grey;
+        /* padding-right: 10px; */
+
+}
+#eventbuttons .eve-box6{
+        height: 100%;
+        width: 15%;
+        padding-left: 10px;
+        padding-bottom: 12px;
+        /* background-color: rgb(255, 0, 179); */
+}
+.eve-box6 h3{
+    color: white;
+    /* font-family: 2rem; */
+    font-size: 1.9rem;
+}
+
+
+#eventbuttons .eve-box7{
+        height: 100%;
+        width: 15%;
+        padding-top: 6px;
+        /* background-color: rgb(200, 255, 0); */
+
+}
+/* +++++++++++++++======== */
+#billboard{
+    height: 13%;
+    width: 100%;
+    background-color: rgba(68, 0, 255, 0.212);
+    border-radius: .6rem;
+
+}
+
+#billboard img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .8rem;
+}
+
+
+#img-code-1 img{
+    height: 20%;
+    width: 100%;
+}
+
+
+#codeimg{
+    height: 15%;
+    /* height: 18%; */
+    width: 84%;
+    background-color: rgb(27, 13, 150);
+    border-radius: .8rem;
+    /* background-image: url(../../assets/Images/code-img.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* margin-top: 2rem; */
+
+}
+
+/* ================Images between text ======= */
+.parabox .CircleImgTwo{
+    position: absolute;
+    bottom: 42%;
+    left: 72%;
+    top: 46%;
+    height: 4%;
+
+}
+.parabox .CircleImgOne{
+    position: absolute;
+    bottom: 86.5%;
+    left: 63%;
+    top: 9%;
+    height: 4%;
+}
+
+
+
+}
+
+
+
+
+/* --------------Tab responsive-------- */
+
+
+@media only screen and (min-width:767px) and (max-width:959px){
+#Section-6{
+    height: 260vh;
+    width: 100%;
+    /* background-color: pink; */
+    background-color: #F6F6F6;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 100px; */
+    position: relative;
+    /* padding-top: 10%; */
+}
+
+.parabox{
+    height: 100%;
+    /* width: 100%; */
+    width: 48%;
+    background-color: yellow;    
+    position: absolute;
+    top: 0;
+    left: 18%;
+    padding-top: 3%;
+}
+
+.parabox h1{
+    font-family: Build;
+    font-size: 2rem;
+    color: #090a0c;
+    padding-top: 4%;
+    /* color: #090a0cab; */
+    color: #090a0c;
+
+}
+
+.parabox p{
+    font-family: Inter;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #090a0c7a;
+    padding-top: .7rem;
+    color: #090a0ce0;
+    width: 100%;
+    /* line-height: 1.5 */
+}
+
+
+/* =============Text change buttons============ */
+
+
+.event-icons-box{
+    font-size: 9px;
+    height: 15px;
+    position: absolute;
+    top: 8%;
+}
+
+.event-icons-boxs{
+    font-size: 9px;
+    height: 10px;
+    position: absolute;
+    top: 0%;
+}
+
+
+#eventbuttons{
+    height: 2%;
+    width: 100%;
+    border-radius: .2rem;
+    background-color: #090a0cf1;
+    margin-top: 1rem;
+    position: relative;
+    top: 0%;
+    display: flex;
+    padding: 1% 1%;
+    margin-left: 0rem;
+
+}
+#eventbuttons .eve-box1{
+        height: 100%;
+        width: 21%;
+        background-color: #5683DA;
+        /* margin-top: 2%; */
+        margin-left: 1%;
+        border-radius: .3rem;
+        color: #F5F5F5;
+        padding: .2rem ;
+        /* margin: 1% 1%; */
+}
+.eve-box1 h6{
+    color: #F5F5F5;
+    padding-bottom: 1rem;
+    font-family: Inter;
+    font-size: .7rem;
+    font-weight: 500;
+}
+#eventbuttons .eve-box2{
+height: 100%;
+width: 11%;
+padding-left: 10px;
+padding-bottom: 15px;
+margin-left: 2%;
+padding-top: 0;
+border-left: 1px solid grey;
+}
+#eventbuttons .eve-box3{
+height: 100%;
+width: 11%;
+padding-left: 8px;
+padding-bottom: 0;
+padding-top: 0;
+}
+
+
+#eventbuttons .eve-box4{
+        height: 100%;
+        width: 11%;
+        /* background-color: rgb(0, 255, 255); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+#eventbuttons .eve-box5{
+        height: 100%;
+        width: 11%;
+        padding-top: 8px;
+        /* background-color: rgb(21, 255, 0); */
+        border-right: 1px solid grey;
+        /* padding-right: 10px; */
+
+}
+#eventbuttons .eve-box6{
+        height: 100%;
+        width: 15%;
+        padding-left: 10px;
+        padding-bottom: 12px;
+        /* background-color: rgb(255, 0, 179); */
+}
+.eve-box6 h3{
+    color: white;
+    /* font-family: 2rem; */
+    font-size: 1.9rem;
+}
+
+
+#eventbuttons .eve-box7{
+        height: 100%;
+        width: 15%;
+        padding-top: 6px;
+        /* background-color: rgb(200, 255, 0); */
+
+}
+/* +++++++++++++++======== */
+#billboard{
+    height: 13%;
+    width: 100%;
+    background-color: rgba(68, 0, 255, 0.212);
+    border-radius: .6rem;
+
+}
+
+#billboard img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .8rem;
+}
+
+
+#img-code-1 img{
+    height: 20%;
+    width: 100%;
+}
+
+
+#codeimg{
+    height: 15%;
+    /* height: 18%; */
+    width: 84%;
+    background-color: rgb(27, 13, 150);
+    border-radius: .8rem;
+    /* background-image: url(../../assets/Images/code-img.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* margin-top: 2rem; */
+
+}
+
+/* ================Images between text ======= */
+.parabox .CircleImgTwo{
+    position: absolute;
+    bottom: 42%;
+    left: 72%;
+    top: 46%;
+    height: 4%;
+
+}
+.parabox .CircleImgOne{
+    position: absolute;
+    bottom: 86.5%;
+    left: 63%;
+    top: 9%;
+    height: 4%;
+}
+
+
+
+}
 
 
 

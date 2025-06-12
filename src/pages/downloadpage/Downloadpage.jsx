@@ -4,21 +4,14 @@ import Navbar from '../../components/navbar/Navbar'
 // import Footer from '../../components/Footer'
 import Logoimg from '../../assets/Images/huly-download-logo.png'
 import Footer from '../../components/footer/footer2/Footer'
-
+import { FaArrowRightLong } from "react-icons/fa6";
 export default function Downloadpage() {
 
 
 
 return (
     <div>
-    {/* ----------------------Nav bar ----------------------- */}
-
-    {/* <Navbar/> */}
-    
-    
-
     {/* ----------------Main Content ----------------------- */}
-
     <div className="box">
     <div id="img-box">
     <img src= {Logoimg} alt="Logo Image" />
@@ -29,24 +22,19 @@ return (
     <h2>
     Easily access online or on macOS, Windows, and Linux. Boost your
     productivity on any platform.
-    </h2>{" "}
-
-
+    </h2>
     <br />
-
-
     <div className="button">
-        <p>DOWNLOAD FOR WINDOWS</p>
+        <p> WEB APPLICATION <FaArrowRightLong/> </p>
     </div>
-
-
     <ul>
     <li><a href="#">Download for macOS (Intel) | </a></li>
     <li><a href="#">Download for macOS (Apple) | </a></li>
     <li><a href="#">Download for Linux | </a></li>
-    <li><a href="#">Web Application</a></li>
+    <li><a href="#">Web Application | </a></li>
     </ul>
-    </div> <br /><br /> 
+    </div> <br /><br /> <br />
+        <br /> <br /> <br /> <br />
         <Footer/>
         <br />
 

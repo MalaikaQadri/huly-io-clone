@@ -48,17 +48,6 @@ html,body{
     padding: 0;
 }
 
-/* .para-img{
-    height: 3%;
-    width: 5%;
-    background-color: aqua;
-    display: inline-block;
-    background-image: url(../../assets/Images//huly-logo-black-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 10;
-} */
 
 /* ===========Carousel Animation Cards========= */
 
@@ -271,3 +260,106 @@ html,body{
     margin-top: 2rem;
     color: rgb(127, 202, 228);
 }
+
+/* ------Mob responsive-------- */
+@media only screen and (min-width:320px) and (max-width:767px){
+.main{
+    position: relative;
+    overflow: hidden;
+    /* height: 180vh; */
+    height: 180%;
+    width: 100%;
+    background-color: #090A0c;
+    /* border: 1px solid yellow; */
+    padding-left: 20%;
+    padding-top: 10%;
+}
+.main p{
+    font-family: Inter;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 75%;
+    /* background-color: blueviolet; */
+}
+.main .inline-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+/* ===========Last para -============ */
+#last-para{
+    height: 80%;
+    width: 100%;
+    background-color: #090A0C;
+    padding-left: 23%;
+    padding-bottom: 6%;
+}
+#last-para p{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Inter;
+    width: 75%;
+    line-height: 1.8;
+}
+#last-para .contact-us{
+    margin-top: 2rem;
+    color: rgb(127, 202, 228);
+}
+}
+
+/* ----------------Tab responsive------------ */
+@media only screen and (min-width:767px) and (max-width:959px){
+.main{
+    position: relative;
+    overflow: hidden;
+    /* height: 180vh; */
+    height: 180%;
+    width: 100%;
+    background-color: #090A0c;
+    /* border: 1px solid yellow; */
+    padding-left: 20%;
+    padding-top: 10%;
+}
+.main p{
+    font-family: Inter;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 75%;
+    /* background-color: blueviolet; */
+}
+.main .inline-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+/* ===========Last para -============ */
+#last-para{
+    height: 80%;
+    width: 100%;
+    background-color: #090A0C;
+    padding-left: 23%;
+    padding-bottom: 6%;
+}
+#last-para p{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Inter;
+    width: 75%;
+    line-height: 1.8;
+}
+#last-para .contact-us{
+    margin-top: 2rem;
+    color: rgb(127, 202, 228);
+}
+}
+

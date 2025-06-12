@@ -39,66 +39,7 @@ export default function PricingPage() {
                     accounts.</p>
                 </div>
                 <HorizontalScroll/>
-                {/* <!-- ----------------Carousel Animation cards------- --> */}
-                {/* <div id="carousel">
-
-                    <div id="carousel-card1">
-                        <div className="card1-container">
-                            <h3>Common</h3>
-                            <h4>For individuals and teams getting started with Huly.</h4> <br/>
-                            <hr/> <br/>
-                            <p> <img src="" alt=""/>   Unlimited users </p> 
-                            <p> <img src="" alt=""/>   Unlimited Huly Objects </p>
-                            <p> <img src="" alt=""/>   10GB Storage per Workspac </p>
-                            <p> <img src="" alt=""/>   10GB Video/Audio Traffic </p>
-                            <p> <img src="" alt=""/>   AI-TBD  </p>
-                            <button> <a href="#">Start Free</a></button>
-                        </div>
-                    </div>
-
-                    <div id="card2">
-                        <div className="card2-container">
-                            <h3>Rare</h3>
-                            <h4>For individual creatives, freelancers, and micro-agencies.</h4> <br/>
-                            <hr/> <br/>
-                            <p> <img src="" alt=""/>   Unlimited users </p> 
-                            <p> <img src="" alt=""/>   Unlimited Huly Objects </p>
-                            <p> <img src="" alt=""/>   100GB Storage </p>
-                            <p> <img src="" alt=""/>   100GB Video/Audio Traffic </p>
-                            <p> <img src="" alt=""/>   AI-TBD  </p>
-                            <button> <a href="">Start Free</a></button>
-                        </div>
-                    </div>
-
-                    <div id="card3">
-                        <div className="card3-container">
-                            <h3>Epic</h3>
-                            <h4>For professional creative companies and small businesses.</h4> <br/>
-                            <hr/> <br/>
-                            <p> <img src="" alt=""/>   Unlimited users </p> 
-                            <p> <img src="" alt=""/>   Unlimited Huly Objects </p>
-                            <p> <img src="" alt=""/>   1TB Storage </p>
-                            <p> <img src="" alt=""/>   500GB Video/Audio Traffic </p>
-                            <p> <img src="" alt=""/>   AI-TBD  </p>
-                            <button> <a href="#">Start Free</a></button>
-                        </div>
-                    </div>
-
-                    <div id="card4">
-                        <div className="card4-container">
-                            <h3>Legendary</h3>
-                            <h4>Best for large multiple teams that need maximum capabilities.</h4> <br/>
-                            <hr/> <br/>
-                            <p> <img src="" alt=""/>   Unlimited users </p> 
-                            <p> <img src="" alt=""/>   Unlimited Huly Objects </p>
-                            <p> <img src="" alt=""/>   10TB Storage </p>
-                            <p> <img src="" alt=""/>   2TB Video/Audio Traffic </p>
-                            <p> <img src="" alt=""/>   AI-TBD  </p>
-                            <button> <a href="#">Start Free</a></button>
-                        </div>
-                    </div>
-                    
-                </div> */}
+                
                 <br />
                 <br /> <br /> <br />
                 <div id="last-para">
@@ -112,7 +53,7 @@ export default function PricingPage() {
                 </div>
 
                     <Mainfooter/>
-                <Footer/>
+                {/* <Footer/> */}
 
     </div>
     )

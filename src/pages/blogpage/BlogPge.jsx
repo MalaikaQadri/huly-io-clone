@@ -30,7 +30,7 @@ export default function BlogPge() {
       powered by intelligent AI assistants. Take a look at how our first AI
       assistant — Hulia — will help you work more productively.
     </p>
-    <a href="../HTML/meet-hulia.html">Read more</a>
+    <a href="">Read more</a>
     
   {/* <div className="line" > </div> */}
 
@@ -38,20 +38,19 @@ export default function BlogPge() {
   </div>
   {/* ------------line------------- */}
 
-  <div className="line" > </div>
+  <div style={{height:"5%", width:"5%", color:"red"}} className="line-after-box" > </div>
 
 
         {/* <hr style={{marginLeft: 27% }} /> */}
 
   {/* -----------------Category Buttons--------------- */}
-  <div className="buttons">
+  {/* <div className="buttons">
     <h4 className="btn1">All Posts</h4>
-    <h4 className="btn2" onclick="industryIns()">
+    <h4 className="btn2" >
       Industry Insights
     </h4>
     <h4 className="btn3">Product Updates</h4>
-  </div>
-  <div id="myDIV">This is my DIV element.</div>
+  </div> */}
 
 
   {/* ---------Boxes after Categorey----------- */}

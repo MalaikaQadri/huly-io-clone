@@ -25,6 +25,7 @@ return (
                     <li><a href="#"><img src= {Heartlogo} alt=""/></a></li>
                     <li>Made with passion and Huly</li>
                 </ul>
+                <h3>Made with passion and Huly.</h3>
             </div>
     </div>
 )

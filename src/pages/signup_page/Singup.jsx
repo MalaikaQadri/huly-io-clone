@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-// import './Signup.css'
-// import './Signup.css'
 // import Footer from '../../components/footer/footer2/Footer'
 import SingupBgvideo from '../../assets/Videos/bg.mp4'
 import HulyLogo from '../../assets/Images/get-started-huly-logo.png'

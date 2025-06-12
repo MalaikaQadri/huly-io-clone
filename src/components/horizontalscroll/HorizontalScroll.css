@@ -18,6 +18,7 @@ html,body{
 .carousel{
     background-color: #090A0C;
     height: 800vh;
+    -webkit-overflow-scrolling: touch;
 }
 .contentContainer{
     height: 80vh;
@@ -56,22 +57,9 @@ html,body{
     margin-left: 2rem;
     /* overflow-y: hidden; */
 }
-#CardOneVideo{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-    border-radius: 2rem;
-}
 #card-one{
     width: 100%;
     height: 100%;
-    /* background-color: blue; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    /* z-index: 2; */
 }
 .card1-container{
     height: 100%;
@@ -80,9 +68,7 @@ html,body{
     border-radius: 1rem;
     font-family: Inter;
     color:whitesmoke ;
-    /* padding: 2rem 3rem; */
     padding: .8rem 1.2rem;
-    /* margin-left: 2rem; */
 }
 .card1-container img{
     height: 100%;
@@ -339,38 +325,195 @@ html,body{
     /* margin-top: 2rem; */
 }
 
-
-
-/* ]]]]]]]]]]]]]]]] */
-.xyz{
-    height: 80%;
-    width: 30%;
-    background-color: rgba(255, 0, 0, 0);
+/* ---------------Mobile responsive------------------- */
+@media only screen and (min-width:320px) and (max-width:767px){
+    .carousel{
+    background-color: #090A0C;
+    min-height: 800vh;
+    -webkit-overflow-scrolling: touch;
 }
-.xyz .zyx{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 255, 76, 0.021);
-    position: relative;
-    
-}
-.xyz video{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    object-fit: cover;
-    border-radius: 2rem;
-    /* z-index: -1; */
-}
-
-.zyx  .abc{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(219, 21, 61, 0.164);
-    position: absolute;
+.contentContainer{
+    height: 80vh;
+    position: sticky;
     top: 0;
-    left: 0;
-    z-index: 2;
-    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+    /* -------------Card one--------- */
+#carousel-card1{
+    height: 100%;
+    width: 72%;
+    margin: .2rem 1rem;
+    margin-left: 2rem;
+}
+#card-one{
+    width: 100%;
+    height: 100%;
+}
+.card1-container{
+    height: 150%;
+    width: 100%;
+    padding: .8rem 0rem;
+}
+.card1-container h3{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.card1-container h4{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+.card1-container p{
+    font-size: .8rem;
+    margin-top: .2rem;
+    margin: 0rem 0rem;
+}
+
+.card1-container button{
+    margin-top: 1rem;
+    padding: .6rem 5rem;
+
+}
+/* --------Crad two------------- */
+#carousel-card2{
+    height: 100%;
+    width: 72%;
+    margin: .2rem 1rem;
+    margin-left: 2rem;
+}
+.card2-container{
+    height: 150%;
+    width: 100%;
+    padding: .8rem 0rem;
+}
+.card2-container h3{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.card2-container h4{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+.card2-container p{
+    font-size: .8rem;
+    margin-top: .2rem;
+    margin: 0rem 0rem;
+}
+.card2-container button{
+    margin-top: 1rem;
+    padding: .6rem 5rem;
+}
+}
+
+/* -------------Tab responsive--------------- */
+@media only screen and (min-width: 767px) and (max-width:959px){
+    #carousel-card1{
+    height: 100%;
+    width: 72%;
+    margin: .2rem 1rem;
+    margin-left: 2rem;
+}
+#card-one{
+    width: 100%;
+    height: 100%;
+}
+.card1-container{
+    height: 150%;
+    width: 100%;
+    padding: .8rem 0rem;
+}
+.card1-container h3{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.card1-container h4{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+.card1-container p{
+    font-size: .8rem;
+    margin-top: .2rem;
+    margin: 0rem 0rem;
+}
+
+.card1-container button{
+    margin-top: 1rem;
+    padding: .6rem 5rem;
+
+}
+
+/* ------------Card 2-------- */
+#carousel-card2{
+    height: 100%;
+    width: 72%;
+    margin: .2rem 1rem;
+    margin-left: 2rem;
+}
+.card2-container{
+    height: 150%;
+    width: 100%;
+    padding: .8rem 0rem;
+}
+.card2-container h3{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.card2-container h4{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+.card2-container p{
+    font-size: .8rem;
+    margin-top: .2rem;
+    margin: 0rem 0rem;
+}
+.card2-container button{
+    margin-top: 1rem;
+    padding: .6rem 5rem;
+}
+/* ---------------Card 3-------------------- */
+#carousel-card3{
+    height: 100%;
+    width: 72%;
+    margin: .2rem 1rem;
+    margin-left: 2rem;
+}
+.card3-container{
+    height: 150%;
+    width: 100%;
+    padding: .8rem 0rem;
+}
+.card3-container h3{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.card3-container h4{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+.card3-container p{
+    font-size: .8rem;
+    margin-top: .2rem;
+    margin: 0rem 0rem;
+}
+.card3-container button{
+    margin-top: 1rem;
+    padding: .6rem 5rem;
+}
+
+
+
 }

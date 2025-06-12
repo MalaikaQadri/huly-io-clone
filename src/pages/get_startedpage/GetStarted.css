@@ -55,7 +55,6 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* flex-direction: column;/ */
     gap: .7rem;
     font-family: Inter;
     font-size: 1rem;
@@ -170,4 +169,111 @@ html,body{
     font-family: Inter;
     font-size: .8rem;
     font-weight: 600;
+}
+
+/* ----------------Mobile media queries ---------- */
+@media only screen and (min-width:320px) and (max-width:767px){
+    
+    .get-started-content{
+        margin-top: 20%;
+    height: 95%;
+    width: 85%;
+}
+.get-started-content .huly-img-box{
+    height: 30%;
+    width: 20%;
+    background-image: url(../../assets//Images/get-started-huly-logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* background-color: white; */
+}
+.get-started-content h1{
+    font-size: 1.7rem;
+}
+
+#email-label{
+    font-size: .8rem;
+}
+
+.my-email{
+    height: 15vh;
+    width: 95%;
+    background-color: #090A0c;
+    border: 1px solid #ffffff1c;
+}
+.my-create-account-button{
+    padding: .6rem 3rem;
+}
+.or{
+    font-weight: 300;
+}
+.get-started-buttons-two{
+    gap: 1rem;
+}
+.get-started-buttons-two button{
+        width: 50%;
+        height: 50%;
+        text-wrap: nowrap;
+        /* padding-left: 12px; */
+        font-size: .7rem;
+        padding: 1.5rem .3rem;
+}
+.get-started-video{
+    height: 100%;
+    width: 100%;
+}
+}
+
+/* ----------tab responsive--------- */
+@media only screen and (min-width:767px) and (max-width:959px){
+        .get-started-content{
+        margin-top: 20%;
+    height: 95%;
+    width: 85%;
+}
+.get-started-content .huly-img-box{
+    height: 30%;
+    width: 20%;
+}
+.get-started-content h1{
+    font-size: 1.7rem;
+}
+
+#email-label{
+    font-size: .8rem;
+}
+
+.my-email{
+    height: 15vh;
+    width: 95%;
+    background-color: #090A0c;
+    border: 1px solid #ffffff1c;
+}
+.my-create-account-button{
+    padding: .6rem 3rem;
+}
+.or{
+    font-weight: 300;
+}
+.get-started-buttons-two{
+    gap: 9rem;
+    padding-left: 4rem;
+}
+.get-started-buttons-two button{
+        width: 30%;
+        height: 50%;
+        text-wrap: nowrap;
+        /* padding-left: 12px; */
+        font-size: .7rem;
+        padding: 1.5rem .3rem;
+}
+.get-started-video{
+    height: 100%;
+    width: 100%;
+}
+
+
+
 }

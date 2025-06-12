@@ -5,22 +5,17 @@ import BgVideo from '../../assets/Videos/hero.mp4'
 import HeroImg from '../../assets/Images/hero-section-image.jpg'
 import HeroBgImg1 from '../../assets/Images/hero-bg1.svg'
 import HeroBgImg2 from '../../assets/Images/hero-bg-2.svg'
-
 import Box1img from '../../assets/Images/box1-img.png'
 import Box2img from '../../assets/Images/box-2-img.png'
 import Box3img from '../../assets/Images/box3.png'  
 import Box4img from '../../assets/Images/box-4-img.png'
 import Defaultimg from '../../assets/Images/default.png'
 import SampleVideo from '../../assets/Videos/wavess.webm'
-
-
 import BgVideo2 from '../../assets/Videos/waves.mp4'
 import SsVideo from '../../assets/Videos/ss-video.mp4'
 import Item1 from '../../assets/Images/item1.png'
 import Item2 from '../../assets/Images/item2.png'
 import Item3 from '../../assets/Images/item3.png'
-
-
 import Feature1 from '../../assets/Images/feature1.jpeg'
 import Feature2 from '../../assets/Images/feature2.jpeg'
 import Feature3 from '../../assets/Images/feature3.jpeg'
@@ -36,12 +31,10 @@ import Footer from '../../components/footer/footer2/Footer'
 import Mainfooter from '../../components/footer/mainfooter/Mainfooter'
 import VideoSsone from '../../assets/Images/Screenshot-github-1.png'
 import VideoSstwo from '../../assets/Images/video-ss.png'
-
 import { FaBold } from "react-icons/fa";
 import { FaItalic } from "react-icons/fa";
 import { FaUnderline } from "react-icons/fa";
 import { FaAt } from "react-icons/fa6";
-
 import { TbBulb } from "react-icons/tb";
 import { RxStrikethrough } from "react-icons/rx";
 export default function Homepage() {
@@ -55,7 +48,7 @@ export default function Homepage() {
 
 
     return (
-    <div>
+    <div style={{backgroundColor:"white"}} >
 
             {/* <!-- Background video------------ --> */}
     
@@ -123,7 +116,7 @@ export default function Homepage() {
         autoPlay
         muted
         playsInline
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", height: "100%", borderRadius:".7rem" }}
       />
                     <img src= {Box4img} alt="" />
                 </div>
@@ -313,25 +306,25 @@ export default function Homepage() {
             <h6> + Link</h6>
         </div> 
         <div className="eve-box2">
-            <h3 onClick={handleClick} ><FaBold style={{height:"20px"}} /></h3>
+            <h3 onClick={handleClick} ><FaBold  className='event-icons-box' style={{height:"20px"}} /></h3>
         </div>
         <div className="eve-box3">
             <h3>
-                <i onClick={handleClick} >  <FaItalic style={{height:"20px"}} /> </i>
+                <i onClick={handleClick} >  <FaItalic  className='event-icons-box'style={{height:"20px"}} /> </i>
             </h3>
         </div>
         <div className="eve-box4">
-           <h3> <FaUnderline size={20} />
+           <h3> <FaUnderline  className='event-icons-box'size={20} />
             </h3> 
         </div>
         <div className="eve-box5">
-                <RxStrikethrough style={{height:"40px"}} size={30} color='grey'/>
+                <RxStrikethrough className='event-icons-boxs' style={{height:"40px"}} size={30} color='grey'/>
         </div>
         <div className="eve-box6">
-            <h3> <FaAt size={30} color='grey' /> </h3>
+            <h3> <FaAt className='event-icons-box' size={30}  color='grey' /> </h3>
         </div>
         <div className="eve-box7">
-            <TbBulb size={40} color='grey' />
+            <TbBulb className='event-icons-box' size={40} color='grey' />
         </div>
         </div>
 
@@ -352,7 +345,7 @@ export default function Homepage() {
 <br />
             <div id="img-code-1">
 
-                <img style={{ height:"40%", width:"100%"  }}  src= {CodeImg} alt="" />
+                <img  src= {CodeImg} alt="" />
             </div>
 
             <p>Documents can be enhanced with rich text formatting, images, attachments and code blocks. Use documents to organize team plans, create technical documentation and support your team's progress towards shared goals.</p> 
@@ -366,7 +359,7 @@ export default function Homepage() {
   </div>
 </div>
                 <Mainfooter/>
-            <Footer/>
+            {/* <Footer/> */}
 
             {/* =========================The end wrapper div================== */}
     </div>

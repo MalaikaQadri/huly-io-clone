@@ -1,8 +1,6 @@
 import React, { useRef } from 'react'
 import './HorizontalScroll.css'
 import { motion, useScroll, useTransform } from "framer-motion";
-import Common from '../../assets/Videos/common2.mp4'
-import Rare from '../../assets/Videos/rare2.mp4'
 import { FaCheck } from "react-icons/fa6";
 export default function HorizontalScroll() {
     const targetRef = useRef(null);
@@ -19,12 +17,6 @@ export default function HorizontalScroll() {
 
                 <motion.div id="carousel-card1" style={{x}} >
                     <div className="card1-container">
-                            {/* <video className='CardOneVideo'
-                                    src={Common}
-                                    loop
-                                    autoPlay
-                                    muted
-                                    playsInline ></video> */}
                         <div id="card-one">
                             <h3>Common</h3>
                             <h4>For individuals and teams getting started with Huly.</h4> <br/>

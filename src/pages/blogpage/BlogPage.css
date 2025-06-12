@@ -97,7 +97,7 @@ html,body{
     .top-box img{
         position: absolute;
         /* position: absolute; */
-    left: 8%;
+    left: 22%;
     top: 0;
     /* top: 23%; */
     /* right: 70px; */
@@ -111,23 +111,21 @@ html,body{
         font-family: Build;
         font-size: 70%;
         padding-left: 10px;
-        width: 95%;
+        width: 65%;
         /* margin: 0; */
     }
     .top-box h2{
         margin-top: 10px;
         font-family: Build;
-        width: 90%;
+        width: 60%;
         font-size: 17px;
-        /* font-size: 1.5rem; */
-        /* border: 1px solid red; */
         
     }
     .top-box p{
         margin-top: 10px;
         margin-bottom: 10px;
         color: grey;
-        width: 90%;
+        width: 60%;
         font-size: .9rem;
         font-family: Inter;
 
@@ -141,41 +139,12 @@ html,body{
     text-decoration: none;
     font-size: .8rem;
     color: rgba(69, 69, 211, 0.822);
-    width: 90%;
+    width: 60%;
 }
 }
 
 /* -----------==============----------------- */
-/* --------Line After Box---------- */
 
-
-.line{
-    /* margin-left: 25%; */
-    /* margin-right: 30%; */
-    /* margin-left: 27%; */
-    /* margin-right: 40%; */
-    height: 10%;
-    width: 45%; 
-    /* width: 40%;  */
-    background-color: rgb(125, 255, 49);
-}
-
-
-/* ---------Media Queries for line-- */
-@media (max-width:600px) {
-    .line{
-        margin-bottom: 5%;
-        margin-top: 13%;
-        /* margin-right: 10%; */
-        width: 80%;
-        height: .3%;
-        padding: 0;
-        margin-right: 10px;
-        margin-left: 40px;
-        /* border: 1px solid blue; */
-    }
-    
-}
 
 /* ------------Category Buttons-------------- */
 .buttons{
@@ -227,6 +196,7 @@ html,body{
 /* ---------------Media Queries for buttons----- */
 @media (max-width:600px) {
     .buttons{
+        display: none;
         height: 8%;
         width: 100%;
         display: flex;
@@ -249,6 +219,7 @@ html,body{
         border: 1px solid rgba(0, 0, 0, 0);
         border-radius: 10px;
         background-color: rgba(216, 113, 75, 0);
+        display: none;
         padding: 5px 10px;
     }
     
@@ -261,6 +232,7 @@ html,body{
         border-radius: 10px;
         background-color: rgba(216, 113, 75, 0.911);
         padding: 5px 10px;
+        display: none;
     }
 
 
@@ -334,7 +306,7 @@ html,body{
 }
 
 /* ==========Box 1 Media Quries======= */
-@media (max-width:600px) {
+@media only screen and (min-width:320px) and (max-width:767px) {
     .box1{
         height: 50%;
         width: 100%;
@@ -352,10 +324,8 @@ html,body{
     .box1 img{
         position: absolute;
         /* position: absolute; */
-    left: 8%;
+    left: 22%;
     top: 0;
-    /* top: 23%; */
-    /* right: 70px; */
     height: 24vh;
     border-radius: 6px;
     }
@@ -366,13 +336,13 @@ html,body{
         font-family: Build;
         font-size: 70%;
         padding-left: 10px;
-        width: 95%;
+        width: 65%;
         /* margin: 0; */
     }
     .box1 h2{
         margin-top: 10px;
         font-family: Build;
-        width: 90%;
+        width: 60%;
         font-size: 17px;
         line-height: 1.5;
         /* font-size: 1.5rem; */
@@ -383,7 +353,7 @@ html,body{
         margin-top: 10px;
         margin-bottom: 10px;
         color: grey;
-        width: 90%;
+        width: 60%;
         font-size: .9rem;
         font-family: Inter;
         /* line-height: 1.3; */
@@ -399,7 +369,7 @@ html,body{
     text-decoration: none;
     font-size: .8rem;
     color: rgba(69, 69, 211, 0.822);
-    width: 90%;
+    width: 60%;
 }
 }
 
@@ -467,28 +437,17 @@ html,body{
 }
 
 /* -----Media Queries for box 2------------- */
-@media (max-width:600px) {
+@media only screen and (min-width:320px) and (max-width:767px) {
     .box2{
         height: 50%;
         width: 100%;
         margin: 100px 10px;
         padding: 10px 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: relative;
-        color: white;
-        /* margin-left: 25%; */
-        /* margin-right: 30%; */
     }
     .box2 img{
-        position: absolute;
-        /* position: absolute; */
-    left: 8%;
+    position: absolute;
+    left: 22%;
     top: 0;
-    /* top: 23%; */
-    /* right: 70px; */
     height: 25vh;
     border-radius: 6px;
     }
@@ -499,26 +458,29 @@ html,body{
         font-family: Build;
         font-size: 70%;
         padding-left: 10px;
-        width: 95%;
+        width: 65%;
         /* margin: 0; */
+    margin-left: 20%;
+
     }
     .box2 h2{
         margin-top: 10px;
         font-family: Build;
-        width: 90%;
+        width: 60%;
         font-size: 17px;
-        /* font-size: 1.5rem; */
-        /* border: 1px solid red; */
+    margin-left: 20%;
+        
         
     }
     .box2 p{
         margin-top: 10px;
         margin-bottom: 10px;
         color: grey;
-        width: 90%;
+        width: 60%;
         font-size: .9rem;
         font-family: Inter;
-
+    margin-left: 20%;
+        
 }
 
 .box2 span{
@@ -529,7 +491,8 @@ html,body{
     text-decoration: none;
     font-size: .8rem;
     color: rgba(69, 69, 211, 0.822);
-    width: 90%;
+    width: 60%;
+    margin-left: 20%;
 }
 }
 
@@ -617,7 +580,7 @@ html,body{
     .box3 img{
         position: absolute;
         /* position: absolute; */
-    left: 8%;
+    left: 22%;
     top: 0;
     /* top: 23%; */
     /* right: 70px; */
@@ -631,25 +594,19 @@ html,body{
         font-family: Build;
         font-size: 70%;
         padding-left: 10px;
-        width: 95%;
-        /* line-height: 1.2; */
-        /* margin: 0; */
+        width: 65%;
     }
     .box3 h2{
         margin-top: 10px;
         font-family: Build;
-        width: 90%;
+        width: 60%;
         font-size: 17px;
-        /* line-height: 1.5; */
-        /* font-size: 1.5rem; */
-        /* border: 1px solid red; */
-        
     }
     .box3 p{
         margin-top: 10px;
         margin-bottom: 10px;
         color: grey;
-        width: 90%;
+        width: 60%;
         font-size: .9rem;
         font-family: Inter;
 
@@ -663,7 +620,7 @@ html,body{
     text-decoration: none;
     font-size: .8rem;
     color: rgba(69, 69, 211, 0.822);
-    width: 90%;
+    width: 60%;
 }
 }
 
@@ -749,7 +706,7 @@ html,body{
     .box4 img{
         position: absolute;
         /* position: absolute; */
-    left: 8%;
+    left: 22%;
     top: 0;
     /* top: 23%; */
     /* right: 70px; */
@@ -763,14 +720,14 @@ html,body{
         font-family: Build;
         font-size: 70%;
         padding-left: 10px;
-        width: 95%;
+        width: 65%;
         line-height: 1.5;
         /* margin: 0; */
     }
     .box4 h2{
         margin-top: 10px;
         font-family: Build;
-        width: 90%;
+        width: 60%;
         font-size: 17px;
         /* font-size: 1.5rem; */
         /* border: 1px solid red; */
@@ -780,7 +737,7 @@ html,body{
         margin-top: 10px;
         margin-bottom: 10px;
         color: grey;
-        width: 90%;
+        width: 60%;
         font-size: .9rem;
         font-family: Inter;
 
@@ -794,7 +751,7 @@ html,body{
     text-decoration: none;
     font-size: .8rem;
     color: rgba(69, 69, 211, 0.822);
-    width: 90%;
+    width: 60%;
 }
 }
 
@@ -883,7 +840,7 @@ html,body{
     .box5 img{
         position: absolute;
         /* position: absolute; */
-    left: 8%;
+    left: 22%;
     top: 0;
     /* top: 23%; */
     /* right: 70px; */
@@ -897,14 +854,14 @@ html,body{
         font-family: Build;
         font-size: 70%;
         padding-left: 10px;
-        width: 95%;
+        width: 65%;
         line-height: 1.5;
         /* margin: 0; */
     }
     .box5 h2{
         margin-top: 10px;
         font-family: Build;
-        width: 90%;
+        width: 60%;
         font-size: 17px;
         /* font-size: 1.5rem; */
         /* border: 1px solid red; */
@@ -914,7 +871,7 @@ html,body{
         margin-top: 10px;
         margin-bottom: 10px;
         color: grey;
-        width: 90%;
+        width: 60%;
         font-size: .9rem;
         font-family: Inter;
 
@@ -928,7 +885,7 @@ html,body{
     text-decoration: none;
     font-size: .8rem;
     color: rgba(69, 69, 211, 0.822);
-    width: 90%;
+    width: 60%;
 }
 }
 
@@ -1014,7 +971,7 @@ html,body{
     .box6 img{
         position: absolute;
         /* position: absolute; */
-    left: 8%;
+    left: 22%;
     top: 0;
     /* top: 23%; */
     /* right: 70px; */
@@ -1028,14 +985,14 @@ html,body{
         font-family: Build;
         font-size: 70%;
         padding-left: 10px;
-        width: 95%;
+        width: 65%;
         line-height: 1.5;
         /* margin: 0; */
     }
     .box6 h2{
         margin-top: 10px;
         font-family: Build;
-        width: 90%;
+        width: 60%;
         font-size: 17px;
         /* font-size: 1.5rem; */
         /* border: 1px solid red; */
@@ -1045,7 +1002,7 @@ html,body{
         margin-top: 10px;
         margin-bottom: 10px;
         color: grey;
-        width: 90%;
+        width: 60%;
         font-size: .9rem;
         font-family: Inter;
 
@@ -1059,7 +1016,7 @@ html,body{
     text-decoration: none;
     font-size: .8rem;
     color: rgba(69, 69, 211, 0.822);
-    width: 90%;
+    width: 60%;
 }
 }
 
@@ -1147,7 +1104,7 @@ html,body{
     .box7 img{
         position: absolute;
         /* position: absolute; */
-    left: 8%;
+    left: 22%;
     top: 0;
     /* top: 23%; */
     /* right: 70px; */
@@ -1161,14 +1118,14 @@ html,body{
         font-family: Build;
         font-size: 70%;
         padding-left: 10px;
-        width: 95%;
+        width: 65%;
         line-height: 1.5;
         /* margin: 0; */
     }
     .box7 h2{
         margin-top: 10px;
         font-family: Build;
-        width: 90%;
+        width: 60%;
         font-size: 17px;
         /* font-size: 1.5rem; */
         /* border: 1px solid red; */
@@ -1178,7 +1135,7 @@ html,body{
         margin-top: 10px;
         margin-bottom: 10px;
         color: grey;
-        width: 90%;
+        width: 60%;
         font-size: .9rem;
         font-family: Inter;
 
@@ -1192,7 +1149,7 @@ html,body{
     text-decoration: none;
     font-size: .8rem;
     color: rgba(69, 69, 211, 0.822);
-    width: 90%;
+    width: 60%;
 }
 }
 
@@ -1280,7 +1237,7 @@ html,body{
     .box8 img{
         position: absolute;
         /* position: absolute; */
-    left: 8%;
+    left: 22%;
     top: 0;
     bottom: 0;
     /* top: 23%; */
@@ -1295,14 +1252,14 @@ html,body{
         font-family: Build;
         font-size: 70%;
         padding-left: 10px;
-        width: 95%;
+        width: 65%;
         line-height: 1.5;
         /* margin: 0; */
     }
     .box8 h2{
         margin-top: 10px;
         font-family: Build;
-        width: 90%;
+        width: 60%;
         font-size: 17px;
         /* font-size: 1.5rem; */
         /* border: 1px solid red; */
@@ -1312,7 +1269,7 @@ html,body{
         margin-top: 10px;
         margin-bottom: 10px;
         color: grey;
-        width: 90%;
+        width: 60%;
         font-size: .9rem;
         font-family: Inter;
 
@@ -1326,7 +1283,7 @@ html,body{
     text-decoration: none;
     font-size: .8rem;
     color: rgba(69, 69, 211, 0.822);
-    width: 90%;
+    width: 60%;
 }
 }
 

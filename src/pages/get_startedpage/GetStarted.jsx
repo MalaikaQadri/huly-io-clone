@@ -34,7 +34,7 @@ export default function GetStarted() {
                     <p className='or'> OR </p> <br />
                     <div className='get-started-buttons-two'>
                         <button style={{display:"flex", alignItems:"center", gap:"8px"}} > 
-                          <AiFillGoogleCircle size={30}/> Sign up with Google</button>
+                          <AiFillGoogleCircle className='sign-up-google-button' size={30}/> Sign up with Google</button>
                         <button style={{display:"flex", alignItems:"center", gap:"8px"}} > <FaGithub size={30} /> Sign up with GitHub</button>
                     </div>
                 </div>

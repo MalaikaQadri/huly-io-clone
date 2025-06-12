@@ -17,12 +17,6 @@ html,body{
     background-color: #090A0C;
 }
 
-/* /-----------Nav bar ------------- */
-
-
-
-/* ----------------Main Content --------- */
-
 /* ----------Main Content------------- */
 .box{
     height: 85vh;
@@ -99,18 +93,17 @@ html,body{
     font-weight: 300;
     /* text-wrap: nowrap; */
 }
-.box .button{
+/* .box .button{
     height: 6%;
     width: 10%;
     background-color: aliceblue;
     padding: .8rem 1rem;
-    /* padding-left: 1rem; */
     border-radius: 2rem;
     position: absolute;
     left: 43%;
     top: 54%;
     border: 1px solid grey;
-}
+} */
 
 .button p{
     font-family: Inter;
@@ -151,10 +144,204 @@ html,body{
     color: blueviolet;
 }
 
-
-
 .box ul li a{
     text-decoration: none;
     color: rgba(245, 245, 245, 0.87);
     /* list-style: none; */
+}
+/* -----------Mobile Responsive------------- */
+@media only screen and (min-width:320px) and (max-width:767px){
+
+    .box{
+    height: 85vh;
+    width: 100%;
+    background-color: #090A0C;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#img-box{
+    height: 30%;
+    width: 30%;
+    /* background-color: #090A0C; */
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: 10;
+    /* box-shadow: 10px 10px 10px 10px black; */
+}
+
+.box h1{
+    color: whitesmoke;
+    font-family: Inter;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 45%;
+    left: 32%;
+    text-align: center;
+}
+.box h2{
+    width: 62%;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    top: 52%;
+    left: 25%;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.box .button{
+    height: 6%;
+    width: 50%;
+    padding: 1rem 1rem;
+    left: 73%;
+    /* right: 20%; */
+    top: 75%;
+}
+
+.button p{
+    font-family: Inter;
+    font-weight: 600;
+    text-wrap: nowrap;
+    font-size: .7rem;
+    padding-bottom: 1rem;
+    padding: 1rem 1rem ;
+    border-radius: 2rem;
+    background-color: rgb(249, 251, 252);
+    position: absolute;
+    top: 75%;
+    left: 45%;
+
+}
+.box h3{
+    font-family: Inter;
+    font-size: 1rem;
+    color: rgba(245, 245, 245, 0.87);
+    font-weight: 400;
+    position: absolute;
+    top: 62%;
+    text-decoration: underline;
+}
+
+/* ============= */
+.box ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    gap: .78rem;
+    padding-top: 35rem;
+    /* position: relative; */
+    font-family: Inter;
+    /* padding-left: 4rem; */
+}
+
+.box ul li{
+    list-style: none;
+    font-size: .8rem;
+    padding-left: 4rem;
+
+}
+
+
+}
+/* --------------Tab responsive--------- */
+@media only screen and (min-width:767px) and (max-width:995px){
+
+    .box{
+    height: 85vh;
+    width: 100%;
+    background-color: #090A0C;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#img-box{
+    height: 30%;
+    width: 30%;
+    /* background-color: #090A0C; */
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: 10;
+    /* box-shadow: 10px 10px 10px 10px black; */
+}
+
+.box h1{
+    color: whitesmoke;
+    font-family: Inter;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 45%;
+    left: 39%;
+    text-align: center;
+}
+.box h2{
+    width: 62%;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    top: 52%;
+    left: 25%;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.box .button{
+    height: 6%;
+    width: 50%;
+    padding: 1rem 1rem;
+    left: 73%;
+    /* right: 20%; */
+    top: 75%;
+}
+
+.button p{
+    font-family: Inter;
+    font-weight: 600;
+    text-wrap: nowrap;
+    font-size: .7rem;
+    padding-bottom: 1rem;
+    padding: 1rem 1rem ;
+    border-radius: 2rem;
+    background-color: rgb(249, 251, 252);
+    position: absolute;
+    top: 75%;
+    left: 46%;
+
+}
+.box h3{
+    font-family: Inter;
+    font-size: 1rem;
+    color: rgba(245, 245, 245, 0.87);
+    font-weight: 400;
+    position: absolute;
+    top: 62%;
+    text-decoration: underline;
+}
+
+/* ============= */
+.box ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    gap: .78rem;
+    padding-top: 35rem;
+    /* position: relative; */
+    font-family: Inter;
+    /* padding-left: 4rem; */
+}
+
+.box ul li{
+    list-style: none;
+    font-size: .8rem;
+    padding-left: 4rem;
+
+}
 }
