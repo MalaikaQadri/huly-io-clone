@@ -88,12 +88,12 @@ html,body{
 .card1-container h4{
     font-size: 1.2rem;
     font-weight: 500;
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
 }
 .card1-container p{
     font-size: 1.2rem;
     margin-top: .7rem;
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
     /* text-wrap: nowrap; */
 }
 
@@ -158,12 +158,12 @@ html,body{
 .card2-container h4{
     font-size: 1.2rem;
     font-weight: 500;
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
 }
 .card2-container p{
     font-size: 1.2rem;
     margin-top: .7rem;
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
 }
 .card2-container button{
     margin-top: 1rem;
@@ -228,13 +228,14 @@ html,body{
 .card3-container h4{
     font-size: 1.2rem;
     font-weight: 500;
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
 
 }
 .card3-container p{
     font-size: 1.2rem;
+    text-wrap: nowrap;
     /* margin-top: .7rem; */
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
 
 }
 .card3-container button{
@@ -288,7 +289,7 @@ html,body{
 }
 .card4-container h3{
     font-size: 1.8rem;
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
 }
 .card4-container h1{
     font-size: 3rem;
@@ -298,7 +299,7 @@ html,body{
 
 .card4-container h4{
     font-size: 1.2rem;
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
     font-weight: 500;
 }
 .card4-container p{
